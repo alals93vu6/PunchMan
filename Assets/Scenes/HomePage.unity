@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 991755098}
   - component: {fileID: 991755097}
   - component: {fileID: 991755100}
-  - component: {fileID: 991755099}
+  - component: {fileID: 991755101}
   m_Layer: 0
   m_Name: MainMenuManager
   m_TagString: Untagged
@@ -490,27 +490,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &991755099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991755096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a1ecdb041ec82f4296ed5192573edcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsTurn: 0
-  AtBR: 0
-  BtCR: 0
-  CtAR: 0
-  AtCL: 0
-  BtAL: 0
-  CtBL: 0
-  CamearCtrl: {fileID: 549248834}
-  YTest: 0
 --- !u!114 &991755100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,6 +504,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ispagemove: 0
   direction: 0
+--- !u!114 &991755101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991755096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf02531c1e93404b875d42caf1a715a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: 00000000e7ffffff19000000
+  Index: 0
 --- !u!1 &1203116379
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,24 +5,31 @@ using UnityEngine;
 
 public class MainMenuManager : MonoBehaviour
 {
-    private PageRotary pageRotary;
+    private PageRotaryB pageRotary;
     // Start is called before the first frame update
     void Start()
     {
-        pageRotary = GetComponent<PageRotary>();
+        pageRotary = GetComponent<PageRotaryB>();
         
         EventBus.Subscribe<GameStartDetected>(OnGameStartDetected);
         EventBus.Subscribe<QuitGameDetected>(OnQuitGameDetected);
         EventBus.Subscribe<HitShopDetected>(OnHitShopDetected);
-        EventBus.Subscribe<AtoBRightMove>(OnAtoBRightMove);
-        EventBus.Subscribe<BtoCRightMove>(OnBtoCRightMove);
-        EventBus.Subscribe<CtoARightMove>(OnCtoARightMove);
-        EventBus.Subscribe<AtoCLeftMove>(OnAtocLeftMove);
-        EventBus.Subscribe<BtoALeftMove>(OnBtoALeftMove);
-        EventBus.Subscribe<CtoBLeftMove>(OnCtoBLeftMove);
+        EventBus.Subscribe<PageLeftMoveDetected>(OnPageLeftMoveDetected);
+        EventBus.Subscribe<PageRightMoveDetected>(OnPageRightMoveDetected);
+        
     }
 
-   
+    private void OnPageRightMoveDetected(PageRightMoveDetected obj)
+    {
+        pageRotary.PageRightMOve();
+    }
+
+    private void OnPageLeftMoveDetected(PageLeftMoveDetected obj)
+    {
+        pageRotary.PageLeftMove();
+    }
+
+
     private void OnQuitGameDetected(QuitGameDetected obj)
     {
         Application.Quit();
@@ -34,41 +41,7 @@ public class MainMenuManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
 
-    private void OnAtoBRightMove(AtoBRightMove obj)
-    {
-        
-        pageRotary.AtoBTurnRight();
-    }
-
-    private void OnBtoCRightMove(BtoCRightMove obj)
-    {
-        
-        pageRotary.BtoCTurnRight();
-    }
-
-    private void OnCtoARightMove(CtoARightMove obj)
-    {
-        
-        pageRotary.CtoATurnRight();
-    }
-
-    private void OnAtocLeftMove(AtoCLeftMove obj)
-    {
-        
-        pageRotary.AtoCTurnLeft();
-    }
-
-    private void OnBtoALeftMove(BtoALeftMove obj)
-    {
-        
-        pageRotary.BtoATurnLeft();
-    }
-
-    private void OnCtoBLeftMove(CtoBLeftMove obj)
-    {
-        
-        pageRotary.CtoBTurnLeft();
-    }
+    
 
     private void OnHitShopDetected(HitShopDetected obj)
     {

@@ -1,6 +1,6 @@
 ﻿namespace Project
 {
-    public class BtoALeftMove
+    public class PageLeftMoveDetected
     {
         
     }

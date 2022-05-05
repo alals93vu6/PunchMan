@@ -77,48 +77,11 @@ public class PageDetection : MonoBehaviour
 
     void page_move_left()
     {
-        //left
-        if (page_now == 1)
-        {
-            //move to store
-            page_now = 2;
-            EventBus.Post(new AtoBRightMove());
-        }
-        else if (page_now == 2)
-        {
-            //move to train
-            page_now = 3;
-            EventBus.Post(new BtoCRightMove());
-        }
-        else if (page_now == 3)
-        {
-            //move to city
-            page_now = 1;
-            EventBus.Post(new CtoARightMove());
-        }
+        EventBus.Post(new PageLeftMoveDetected());
     }
     void page_move_right()
     {
-        //right
-        if (page_now == 1)
-        {
-            //move to train
-            page_now = 3;
-            EventBus.Post(new AtoCLeftMove());
-            //transform.Rotate(0,90,0);
-        }
-        else if (page_now == 2)
-        {
-            //move to city
-            page_now = 1;
-            EventBus.Post(new BtoALeftMove());
-        }
-        else if (page_now == 3)
-        {
-            //move to store
-            page_now = 2;
-            EventBus.Post(new CtoBLeftMove());
-        }
+        EventBus.Post(new PageRightMoveDetected());
     }
 
     void Chage()
@@ -127,11 +90,11 @@ public class PageDetection : MonoBehaviour
         {
             if (direction == 1)
             {
-                page_move_left();
+                page_move_right();
             }
             if (direction == 2)
             {
-                page_move_right();
+                page_move_left();
             }
             first = Vector2.zero;
             second = Vector2.zero;

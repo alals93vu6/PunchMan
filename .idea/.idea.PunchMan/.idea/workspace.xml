@@ -41,9 +41,15 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoCLeftMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/CtoBLeftMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/BtoALeftMove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" />
+      <option value="$PROJECT_DIR$/Assets/PageTest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageLeftmove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageRightmove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageLeftMoveDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageRightMoveDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -94,6 +100,7 @@
       <updated>1651084108164</updated>
       <workItem from="1651084112862" duration="2464000" />
       <workItem from="1651716398186" duration="10711000" />
+      <workItem from="1651750199990" duration="2093000" />
     </task>
     <servers />
   </component>
@@ -112,5 +119,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
