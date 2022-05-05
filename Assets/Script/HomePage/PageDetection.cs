@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Project;
 using UnityEngine;
 
-public class Page : MonoBehaviour
+public class PageDetection : MonoBehaviour
 {
     Vector2 first = Vector2.zero;
     Vector2 second = Vector2.zero;
@@ -11,8 +12,8 @@ public class Page : MonoBehaviour
     //city  = 1 主畫面
     //store = 2 商店
     //train = 3 訓練
-    bool ispagemove = false;
-    int direction = 0;
+    [SerializeField] bool ispagemove = false;
+    [SerializeField] int direction = 0;
     //方向
     //1 = left
     //2 = right
@@ -28,7 +29,7 @@ public class Page : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(page_now);
+        //Debug.Log(page_now);
         movemouse();
         move_page();
         Chage();
@@ -81,16 +82,19 @@ public class Page : MonoBehaviour
         {
             //move to store
             page_now = 2;
+            EventBus.Post(new AtoBRightMove());
         }
         else if (page_now == 2)
         {
             //move to train
             page_now = 3;
+            EventBus.Post(new BtoCRightMove());
         }
         else if (page_now == 3)
         {
             //move to city
             page_now = 1;
+            EventBus.Post(new CtoARightMove());
         }
     }
     void page_move_right()
@@ -100,16 +104,20 @@ public class Page : MonoBehaviour
         {
             //move to train
             page_now = 3;
+            EventBus.Post(new AtoCLeftMove());
+            //transform.Rotate(0,90,0);
         }
         else if (page_now == 2)
         {
             //move to city
             page_now = 1;
+            EventBus.Post(new BtoALeftMove());
         }
         else if (page_now == 3)
         {
             //move to store
             page_now = 2;
+            EventBus.Post(new CtoBLeftMove());
         }
     }
 

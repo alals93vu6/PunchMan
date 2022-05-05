@@ -9,8 +9,17 @@
         <e p="Script" t="Include">
           <e p="Events" t="Include">
             <e p="EventBus.cs" t="Include" />
-            <e p="GameStartDetected.cs" t="Include" />
-            <e p="QuitGameDetected.cs" t="Include" />
+            <e p="HomePageEventts" t="Include">
+              <e p="AtoBRightMove.cs" t="Include" />
+              <e p="AtoCLeftMove.cs" t="Include" />
+              <e p="BtoALeftMove.cs" t="Include" />
+              <e p="BtoCRightMove.cs" t="Include" />
+              <e p="CtoARightMove.cs" t="Include" />
+              <e p="CtoBLeftMove.cs" t="Include" />
+              <e p="GameStartDetected.cs" t="Include" />
+              <e p="HitShopDetected.cs" t="Include" />
+              <e p="QuitGameDetected.cs" t="Include" />
+            </e>
           </e>
           <e p="GamePlay" t="Include">
             <e p="Actor.cs" t="Include" />
@@ -25,9 +34,8 @@
             <e p="AltF4Button.cs" t="Include" />
             <e p="GameStartButton.cs" t="Include" />
             <e p="MainMenuManager.cs" t="Include" />
-          </e>
-          <e p="Page" t="Include">
-            <e p="Page.cs" t="Include" />
+            <e p="PageDetection.cs" t="Include" />
+            <e p="PageRotary.cs" t="Include" />
           </e>
         </e>
         <e p="Test" t="Include">

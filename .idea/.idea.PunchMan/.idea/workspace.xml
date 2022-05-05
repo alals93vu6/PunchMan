@@ -11,7 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -23,7 +24,26 @@
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/QuitGameDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/AltF4Button.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HitShopDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/Page.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/ATurnrightB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/BTurn rightC.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurn rightB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/BTurnrightC.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/ATurnleftB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/BTurnleftC.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnleftA.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightA.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoBRightMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/BtoCRightMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/CtoARightMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoCLeftMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/CtoBLeftMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/BtoALeftMove.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -36,6 +56,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -66,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651084108164</updated>
-      <workItem from="1651084112862" duration="1097000" />
+      <workItem from="1651084112862" duration="2464000" />
+      <workItem from="1651716398186" duration="10711000" />
     </task>
     <servers />
   </component>
@@ -75,4 +102,15 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>
