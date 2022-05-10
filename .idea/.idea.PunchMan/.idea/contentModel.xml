@@ -11,7 +11,11 @@
             <e p="EventBus.cs" t="Include" />
             <e p="HomePageEventts" t="Include">
               <e p="GameStartDetected.cs" t="Include" />
+              <e p="HitGymDetected.cs" t="Include" />
               <e p="HitShopDetected.cs" t="Include" />
+              <e p="InGameStartReady.cs" t="Include" />
+              <e p="InGym.cs" t="Include" />
+              <e p="InShop.cs" t="Include" />
               <e p="PageLeftMoveDetected.cs" t="Include" />
               <e p="PageRightMoveDetected.cs" t="Include" />
               <e p="QuitGameDetected.cs" t="Include" />
@@ -29,6 +33,7 @@
           <e p="HomePage" t="Include">
             <e p="AltF4Button.cs" t="Include" />
             <e p="GameStartButton.cs" t="Include" />
+            <e p="HomePageUIManager.cs" t="Include" />
             <e p="MainMenuManager.cs" t="Include" />
             <e p="PageDetection.cs" t="Include" />
             <e p="PageRotary.cs" t="Include" />

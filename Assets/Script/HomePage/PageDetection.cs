@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PageDetection : MonoBehaviour
 {
+    public PageRotaryB pageRotary;
+    
     Vector2 first = Vector2.zero;
     Vector2 second = Vector2.zero;
 
@@ -23,7 +25,7 @@ public class PageDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        pageRotary = GetComponent<PageRotaryB>();
     }
 
     // Update is called once per frame
@@ -65,6 +67,11 @@ public class PageDetection : MonoBehaviour
                 ispagemove = true;
 
             }
+            else
+            {
+                pageRotary.OnClick();
+                ispagemove = true;
+            }
         }
 
 
@@ -72,6 +79,7 @@ public class PageDetection : MonoBehaviour
         {
             direction = 0;
             ispagemove = false;
+            
         }
     }
 

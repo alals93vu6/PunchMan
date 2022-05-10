@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Project;
 using UnityEngine;
 
 public class PageRotaryB : MonoBehaviour
@@ -17,11 +18,14 @@ public class PageRotaryB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CurrentStatus();
         if (Index >= 3) Index = 0;
         if (Index <= -1) Index = 2;
         Index = Mathf.Clamp(Index ,0 , 2);
         Camera.main.transform.rotation =
             Quaternion.Lerp(Camera.main.transform.rotation, Quaternion.Euler(0, Target[Index], 0), 0.05f);
+        
+        
     }
 
     public void PageLeftMove()
@@ -32,5 +36,38 @@ public class PageRotaryB : MonoBehaviour
     public void PageRightMOve()
     {
         Index++;
+    }
+    
+
+    public void CurrentStatus()
+    {
+        if(Index == 0)
+        {
+            EventBus.Post(new InGameStartReady());
+        }
+        else if(Index == 1)
+        {
+            EventBus.Post(new InShop());
+        }
+        else
+        {
+            EventBus.Post(new InGym());
+        }
+    }
+
+    public void OnClick()
+    {
+        if(Index == 0)
+        {
+            EventBus.Post(new GameStartDetected());
+        }
+        else if(Index == 1)
+        {
+            EventBus.Post(new HitShopDetected());
+        }
+        else
+        {
+            EventBus.Post(new HitGymDetected());
+        }
     }
 }
