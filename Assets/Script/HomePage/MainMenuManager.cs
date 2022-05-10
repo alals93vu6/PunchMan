@@ -69,7 +69,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnHitShopDetected(HitShopDetected obj)
     {
-        Debug.Log("商店");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
     }
 
     

@@ -7,7 +7,7 @@ public class PageRotaryB : MonoBehaviour
 {
     [SerializeField] private List<int> Target = new List<int>();
 
-    [SerializeField] private int Index;
+    [SerializeField] public int Index;
      
     // Start is called before the first frame update
     void Start()
@@ -47,27 +47,15 @@ public class PageRotaryB : MonoBehaviour
         }
         else if(Index == 1)
         {
-            EventBus.Post(new InShop());
+            EventBus.Post(new InGym());
+            
         }
         else
         {
-            EventBus.Post(new InGym());
+            EventBus.Post(new InShop());
+            
         }
     }
 
-    public void OnClick()
-    {
-        if(Index == 0)
-        {
-            EventBus.Post(new GameStartDetected());
-        }
-        else if(Index == 1)
-        {
-            EventBus.Post(new HitShopDetected());
-        }
-        else
-        {
-            EventBus.Post(new HitGymDetected());
-        }
-    }
+    
 }

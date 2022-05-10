@@ -37,7 +37,7 @@ public class PageDetection : MonoBehaviour
         Chage();
     }
 
-    void movemouse()
+    private void movemouse()
     {
         if (Input.GetMouseButtonDown(0) == true)
         {
@@ -49,7 +49,7 @@ public class PageDetection : MonoBehaviour
             ismouse = true;
         }
     }
-    void move_page()
+    private void move_page()
     {
         if (first.y - second.y <= 0.4f && first.y - second.y >= -0.4f && ismouse == true)
         {
@@ -69,30 +69,23 @@ public class PageDetection : MonoBehaviour
             }
             else
             {
-                pageRotary.OnClick();
+                OnClick();
                 ispagemove = true;
             }
         }
-
-
-        else if (first.x == second.x && first.y == second.y)
-        {
-            direction = 0;
-            ispagemove = false;
-            
-        }
+        
     }
 
-    void page_move_left()
+    private void page_move_left()
     {
         EventBus.Post(new PageLeftMoveDetected());
     }
-    void page_move_right()
+    private void page_move_right()
     {
         EventBus.Post(new PageRightMoveDetected());
     }
 
-    void Chage()
+    private void Chage()
     {
         if (ispagemove == true)
         {
@@ -109,6 +102,24 @@ public class PageDetection : MonoBehaviour
             ispagemove = false;
             direction = 0;
             ismouse = false;
+        }
+    }
+    
+    private void OnClick()
+    {
+        if(pageRotary.Index == 0)
+        {
+            EventBus.Post(new GameStartDetected());
+        }
+        
+        if(pageRotary.Index == 1)
+        {
+            EventBus.Post(new HitGymDetected());
+        }
+        
+        if(pageRotary.Index == 2)
+        {
+            EventBus.Post(new HitShopDetected());
         }
     }
 }

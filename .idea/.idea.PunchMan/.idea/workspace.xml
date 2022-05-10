@@ -11,6 +11,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,9 +57,12 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGym.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGameStartReady.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/BackHomePageDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -109,7 +114,8 @@
       <workItem from="1651084112862" duration="2464000" />
       <workItem from="1651716398186" duration="10711000" />
       <workItem from="1651750199990" duration="2093000" />
-      <workItem from="1652165462130" duration="3037000" />
+      <workItem from="1652165462130" duration="3575000" />
+      <workItem from="1652195705395" duration="2244000" />
     </task>
     <servers />
   </component>
