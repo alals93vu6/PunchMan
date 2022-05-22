@@ -36,15 +36,6 @@ public class ActorJudgement : MonoBehaviour
         
         switch (actor.GetActorBehaviour())
         {
-            case BehaviourEnum.ActorBehaviour.isDefend:
-                if (actorEnemy.GetEnemyBehaviour() == BehaviourEnum.EnemyBehaviour.isAttack)
-                {
-                    //PlayerGetDamage(1);
-                    EventBus.Post(new PlayerDefendAttackDetected());
-                }
-
-                break;
-            
             case BehaviourEnum.ActorBehaviour.isLeftAttck:
                 
                 if (actorEnemy.GetEnemyBehaviour() != BehaviourEnum.EnemyBehaviour.isAttack) //不是正在攻擊
@@ -135,9 +126,6 @@ public class ActorJudgement : MonoBehaviour
             //PlayerGetDamage(1);
             EventBus.Post(new PlayerDefendAttackDetected());
             
-            
-            
-            
             actorEnemy.ResetBehaviour();
         }
         else
@@ -146,9 +134,6 @@ public class ActorJudgement : MonoBehaviour
             {
                 //PlayerGetDamage(5);
                 EventBus.Post(new PlayerGetAttackDetected());
-                
-                
-                
                 
                 actorEnemy.ResetBehaviour();
             }

@@ -23,7 +23,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurn rightB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/BTurnrightC.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/ATurnleftB.cs" />
@@ -72,8 +71,9 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackDefendDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/Actor.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -127,7 +127,7 @@
       <workItem from="1651750199990" duration="2093000" />
       <workItem from="1652165462130" duration="3575000" />
       <workItem from="1652195705395" duration="2244000" />
-      <workItem from="1653220633555" duration="3873000" />
+      <workItem from="1653220633555" duration="4723000" />
     </task>
     <servers />
   </component>
