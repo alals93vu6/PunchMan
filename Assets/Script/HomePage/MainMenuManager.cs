@@ -13,15 +13,15 @@ public class MainMenuManager : MonoBehaviour
     {
         pageRotary = GetComponent<PageRotaryB>();
         homePageUIManager = GetComponent<HomePageUIManager>();
-        EventBus.Subscribe<GameStartDetected>(OnGameStartDetected);
-        EventBus.Subscribe<QuitGameDetected>(OnQuitGameDetected);
-        EventBus.Subscribe<HitShopDetected>(OnHitShopDetected);
-        EventBus.Subscribe<PageLeftMoveDetected>(OnPageLeftMoveDetected);
-        EventBus.Subscribe<PageRightMoveDetected>(OnPageRightMoveDetected);
-        EventBus.Subscribe<HitGymDetected>(OnHitGymDetected);
-        EventBus.Subscribe<InGameStartReady>(NowInGameStartReady);
-        EventBus.Subscribe<InGym>(NowInGym);
-        EventBus.Subscribe<InShop>(NowInShop);
+        EventBus.Subscribe<GameStartDetected>(OnGameStartDetected); //遊戲開始
+        EventBus.Subscribe<QuitGameDetected>(OnQuitGameDetected); //關閉遊戲
+        EventBus.Subscribe<HitShopDetected>(OnHitShopDetected); //點擊商城
+        EventBus.Subscribe<PageLeftMoveDetected>(OnPageLeftMoveDetected); //視角左移
+        EventBus.Subscribe<PageRightMoveDetected>(OnPageRightMoveDetected); //視角右移
+        EventBus.Subscribe<HitGymDetected>(OnHitGymDetected); // 點及健身房
+        EventBus.Subscribe<InGameStartReady>(NowInGameStartReady); //開始遊戲介面
+        EventBus.Subscribe<InGym>(NowInGym); //強化介面
+        EventBus.Subscribe<InShop>(NowInShop); //商城介面
     }
 
     private void NowInGym(InGym obj)

@@ -307,6 +307,8 @@ GameObject:
   - component: {fileID: 186672950}
   - component: {fileID: 186672954}
   - component: {fileID: 186672955}
+  - component: {fileID: 186672953}
+  - component: {fileID: 186672952}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -368,6 +370,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186672952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186672948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63798ccacd1f5d0419b62650b39e6d55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &186672953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186672948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92177a0d12c5091478f588dc849c79da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHP: 0
+  PlayerHP: 0
+  AttckTime: 0
 --- !u!114 &186672954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -396,10 +425,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: {fileID: 186672949}
   actorEnemy: {fileID: 186672954}
-  EnemyHP: 0
-  PlayerHP: 0
-  AttckTime: 0
   UICtrl: {fileID: 0}
+  HPFlot: {fileID: 0}
 --- !u!1 &429079684
 GameObject:
   m_ObjectHideFlags: 0

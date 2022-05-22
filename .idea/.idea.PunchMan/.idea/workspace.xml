@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,15 +23,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/EventwBus.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GameStartDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/QuitGameDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HitShopDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/Page.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/ATurnrightB.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/BTurn rightC.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurn rightB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/BTurnrightC.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightB.cs" />
@@ -62,10 +54,26 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/BackHomePageDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/AltF4Button.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLeftAttck.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKHitDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKDefft.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKDefendDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerRATKHitDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerRATKDefendDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerDefendEnemyATK.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttckByEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAndEnemyMutualAttckDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttckDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerDefendAttackDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttackDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackHitDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackDefendDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -119,6 +127,7 @@
       <workItem from="1651750199990" duration="2093000" />
       <workItem from="1652165462130" duration="3575000" />
       <workItem from="1652195705395" duration="2244000" />
+      <workItem from="1653220633555" duration="3873000" />
     </task>
     <servers />
   </component>

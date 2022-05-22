@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Project;
+using Project.GamePlay;
 using UnityEngine;
 
 public class ActorJudgement : MonoBehaviour
@@ -9,28 +11,23 @@ public class ActorJudgement : MonoBehaviour
 
     [SerializeField] private ActorEnemy actorEnemy;
 
-    [Header("數值")] 
-    [SerializeField] private int EnemyHP;
-    [SerializeField] private int PlayerHP;
-    [SerializeField] private float AttckTime;
-
     [Header("other")] 
     [SerializeField] private UIManager UICtrl;
+
+    [SerializeField] private HPCalculation HPFlot;
     
     // Start is called before the first frame update
     void Start()
     {
-        PlayerHP = 20;
-        EnemyHP = 100;
         UICtrl = GetComponent<UIManager>();
+        HPFlot = GetComponent<HPCalculation>();
+        UICtrl.PlayerHPText(HPFlot.PlayerHP);
+        UICtrl.EnemyHPText(HPFlot.EnemyHP);
     }
 
     void Update()
     {
-        if (PlayerHP <= 0)
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
-        }
+        
     }
 
     public void PlayerJudge()
@@ -42,8 +39,8 @@ public class ActorJudgement : MonoBehaviour
             case BehaviourEnum.ActorBehaviour.isDefend:
                 if (actorEnemy.GetEnemyBehaviour() == BehaviourEnum.EnemyBehaviour.isAttack)
                 {
-                    PlayerGetDamage(1);
-                    
+                    //PlayerGetDamage(1);
+                    EventBus.Post(new PlayerDefendAttackDetected());
                 }
 
                 break;
@@ -54,25 +51,27 @@ public class ActorJudgement : MonoBehaviour
                 {
                     if (actorEnemy.GetEnemyBehaviour() != BehaviourEnum.EnemyBehaviour.isLeftDefend) //不是正在左防禦
                     {
-                        EnemyGetDamage(3); //打中
+                        //EnemyGetDamage(3); //打中
+                        EventBus.Post(new PlayerAttackHitDetected());
                         UICtrl.ShowText("你擊出左拳");
                         
                     }
                     else
                     {
-                        EnemyGetDamage(1); //被防禦到了
+                        //EnemyGetDamage(1); //被防禦到了
+                        EventBus.Post(new PlayerAttackDefendDetected());
                         UICtrl.ShowText("你擊出左拳");
                         
                     }
                 }
-                /*
                 else //互尻
                 {
-                    PlayerGetDamage(8); 
-                    EnemyGetDamage(2);
-                    UICtrl.ShowText("你們互相攻擊");
+                    //PlayerGetDamage(8); 
+                    //EnemyGetDamage(2);
+                    //EventBus.Post(new PlayerAndEnemyMutualAttckDetected());
+                    
                 }
-                */
+                
                 
                 break;
             
@@ -82,33 +81,37 @@ public class ActorJudgement : MonoBehaviour
                 {
                     if (actorEnemy.GetEnemyBehaviour() != BehaviourEnum.EnemyBehaviour.isRightDefend)
                     {
-                        EnemyGetDamage(3);
+                        //EnemyGetDamage(3);
+                        EventBus.Post(new PlayerAttackHitDetected());
                         UICtrl.ShowText("你擊出右拳");
                         
                     }
                     else
                     {
-                        EnemyGetDamage(1);
+                        //EnemyGetDamage(1);
+                        EventBus.Post(new PlayerAttackDefendDetected());
                         UICtrl.ShowText("你擊出右拳");
                         
                     }
                 }
-                /*
                 else
                 {
-                    PlayerGetDamage(8);
-                    EnemyGetDamage(2);
-                    UICtrl.ShowText("你們互相攻擊");
+                    //PlayerGetDamage(8);
+                    //EnemyGetDamage(2);
+                    //EventBus.Post(new PlayerAndEnemyMutualAttckDetected());
+                    
                 }
-                */
+                
                 break;
             
             case BehaviourEnum.ActorBehaviour.isIdle:
+                
+                
                 break;
         }
         
-        UICtrl.PlayerHPText(PlayerHP);
-        UICtrl.EnemyHPText(EnemyHP);
+        UICtrl.PlayerHPText(HPFlot.PlayerHP);
+        UICtrl.EnemyHPText(HPFlot.EnemyHP);
         actorEnemy.ResetBehaviour();
     }
 
@@ -123,20 +126,17 @@ public class ActorJudgement : MonoBehaviour
                     
                 break;
         }
-        
-        UICtrl.PlayerHPText(PlayerHP);
-        UICtrl.EnemyHPText(EnemyHP);
-        
     }
 
     private void EnemyAttck()
     {
         if (actor.GetActorBehaviour() == BehaviourEnum.ActorBehaviour.isDefend)
         {
-            PlayerGetDamage(1);
-            UICtrl.ShowText("你防禦住了");
+            //PlayerGetDamage(1);
+            EventBus.Post(new PlayerDefendAttackDetected());
             
-            Debug.Log("ATKC");
+            
+            
             
             actorEnemy.ResetBehaviour();
         }
@@ -144,36 +144,32 @@ public class ActorJudgement : MonoBehaviour
         {
             if (actor.GetActorBehaviour() == BehaviourEnum.ActorBehaviour.isIdle)
             {
-                PlayerGetDamage(5);
-                UICtrl.ShowText("你被擊中了");
+                //PlayerGetDamage(5);
+                EventBus.Post(new PlayerGetAttackDetected());
                 
-                Debug.Log("ATKB");
+                
+                
                 
                 actorEnemy.ResetBehaviour();
             }
             else
             {
-                PlayerGetDamage(8);
-                EnemyGetDamage(2);
-                UICtrl.ShowText("你們互相攻擊");
+                //PlayerGetDamage(8);
+                //EnemyGetDamage(2);
                 
-                Debug.Log("ATKA");
-                
+                EventBus.Post(new PlayerAndEnemyMutualAttckDetected());
+
                 actorEnemy.ResetBehaviour();
             }
+            
         }
         
+        CancelInvoke("EnemyAttck");
+        UICtrl.PlayerHPText(HPFlot.PlayerHP);
+        UICtrl.EnemyHPText(HPFlot.EnemyHP);
     }
 
-    private void PlayerGetDamage(int damage)
-    {
-        PlayerHP -= damage;
-    }
     
-    private void EnemyGetDamage(int damage)
-    {
-        EnemyHP -= damage;
-    }
     
     
 }

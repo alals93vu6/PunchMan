@@ -9,6 +9,13 @@
         <e p="Script" t="Include">
           <e p="Events" t="Include">
             <e p="EventBus.cs" t="Include" />
+            <e p="GamePlay" t="Include">
+              <e p="PlayerAndEnemyMutualAttckDetected.cs" t="Include" />
+              <e p="PlayerAttackDefendDetected.cs" t="Include" />
+              <e p="PlayerAttackHitDetected.cs" t="Include" />
+              <e p="PlayerDefendAttackDetected.cs" t="Include" />
+              <e p="PlayerGetAttackDetected.cs" t="Include" />
+            </e>
             <e p="HomePageEventts" t="Include">
               <e p="GameStartDetected.cs" t="Include" />
               <e p="HitGymDetected.cs" t="Include" />
@@ -33,6 +40,8 @@
             <e p="ActorJudgement.cs" t="Include" />
             <e p="AnimatorManager.cs" t="Include" />
             <e p="BehaviourEnum.cs" t="Include" />
+            <e p="GameIngManager.cs" t="Include" />
+            <e p="HPCalculation.cs" t="Include" />
             <e p="Instance.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
