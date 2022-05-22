@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class AltF4Button : MonoBehaviour
 {
-    private Button quitButton;
+    public Button quitButton;
     
     void Start()
     {
-        quitButton = GetComponent<Button>();
+        //quitButton.GetComponent<Button>();
         quitButton.onClick.AddListener(AltF4);
     }
 

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,14 @@ public class ActorJudgement : MonoBehaviour
         PlayerHP = 20;
         EnemyHP = 100;
         UICtrl = GetComponent<UIManager>();
+    }
+
+    void Update()
+    {
+        if (PlayerHP <= 0)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        }
     }
 
     public void PlayerJudge()

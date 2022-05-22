@@ -12,12 +12,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -26,7 +27,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GameStartDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/QuitGameDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/AltF4Button.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HitShopDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/Page.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/ATurnrightB.cs" />
@@ -63,6 +63,9 @@
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/AltF4Button.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
