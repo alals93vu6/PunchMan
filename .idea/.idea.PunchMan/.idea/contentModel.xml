@@ -43,6 +43,7 @@
             <e p="GameIngManager.cs" t="Include" />
             <e p="HPCalculation.cs" t="Include" />
             <e p="Instance.cs" t="Include" />
+            <e p="LVManager.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
           <e p="GameShop" t="Include">
