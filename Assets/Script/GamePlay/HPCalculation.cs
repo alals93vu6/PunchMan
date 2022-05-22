@@ -7,16 +7,24 @@ public class HPCalculation : MonoBehaviour
     [Header("數值")] 
     [SerializeField] public int EnemyHP;
     [SerializeField] public int PlayerHP;
-    [SerializeField] private float AttckTime;
+    [SerializeField] public int PlayerPower;
+    [SerializeField] public int EnemyPower;
+    [SerializeField] private float PlayerPowerCalculation;
+    [SerializeField] private float EnemyPowerCalculation;
+    [SerializeField] private float DamageFloat;
+
+    public LVManager GetLV;
 
     
     
     // Start is called before the first frame update
     void Start()
     {
-        PlayerHP = 20;
-        EnemyHP = 100;
-        
+        GetLV = GetComponent<LVManager>();
+        PlayerHP = GetLV.GetPlayerHP;
+        PlayerPower = GetLV.GetPlayerPower;
+        EnemyHP = GetLV.GetEnemyHP;
+        EnemyPower = GetLV.GetEnemyPower;
     }
 
     // Update is called once per frame
@@ -30,13 +38,19 @@ public class HPCalculation : MonoBehaviour
     
     
     
-    public void PlayerGetDamage(int damage)
+    public void PlayerGetDamage(float damage)
     {
-        PlayerHP -= damage;
+        EnemyPowerCalculation = EnemyPower;
+        DamageFloat = EnemyPowerCalculation * damage;
+        
+        PlayerHP -= (int) DamageFloat;
     }
     
-    public void EnemyGetDamage(int damage)
+    public void EnemyGetDamage(float damage)
     {
-        EnemyHP -= damage;
+        PlayerPowerCalculation = PlayerPower;
+        DamageFloat = PlayerPowerCalculation * damage;
+
+        EnemyHP -=  (int) DamageFloat;
     }
 }

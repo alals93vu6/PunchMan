@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 186672955}
   - component: {fileID: 186672953}
   - component: {fileID: 186672952}
+  - component: {fileID: 186672956}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -396,7 +397,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyHP: 0
   PlayerHP: 0
-  AttckTime: 0
+  PlayerPower: 0
+  EnemyPower: 0
+  PlayerPowerCalculation: 0
+  EnemyPowerCalculation: 0
+  DamageFloat: 0
+  GetLV: {fileID: 0}
 --- !u!114 &186672954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,6 +433,29 @@ MonoBehaviour:
   actorEnemy: {fileID: 186672954}
   UICtrl: {fileID: 0}
   HPFlot: {fileID: 0}
+--- !u!114 &186672956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186672948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7084f7bf2a18e45b10004aa75e1a0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyHPLV: 0
+  PlayerHPLV: 0
+  PlayerPowerLV: 0
+  EnemyPowerLV: 0
+  NowLV: 0
+  NowHPLV: 0
+  NowPowerLV: 0
+  GetEnemyHP: 0
+  GetPlayerHP: 0
+  GetPlayerPower: 0
+  GetEnemyPower: 0
 --- !u!1 &429079684
 GameObject:
   m_ObjectHideFlags: 0

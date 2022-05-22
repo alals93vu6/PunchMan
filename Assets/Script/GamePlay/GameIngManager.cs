@@ -28,32 +28,32 @@ public class GameIngManager : MonoBehaviour
 
     private void OnPlayerDefend(PlayerDefendAttackDetected obj)
     {
-        HpCorrection.PlayerGetDamage(1);
+        HpCorrection.PlayerGetDamage(0.2f);
         UICtrl.ShowText("你防禦住了");
         Debug.Log("ATKC");
     }
 
     private void OnPlayerGetHit(PlayerGetAttackDetected obj)
     {
-        HpCorrection.PlayerGetDamage(5);
+        HpCorrection.PlayerGetDamage(1f);
         UICtrl.ShowText("你被擊中了");
         Debug.Log("ATKB");
     }
 
     private void OnPlayerHitEnemy(PlayerAttackHitDetected obj)
     {
-        HpCorrection.EnemyGetDamage(3);
+        HpCorrection.EnemyGetDamage(1f);
     }
 
     private void OnPlayerNotHitEnemy(PlayerAttackDefendDetected obj)
     {
-        HpCorrection.EnemyGetDamage(1);
+        HpCorrection.EnemyGetDamage(0.4f);
     }
 
     private void OnPlayerMutualAttack(PlayerAndEnemyMutualAttckDetected obj)
     {
-        HpCorrection.PlayerGetDamage(8);
-        HpCorrection.EnemyGetDamage(3);
+        HpCorrection.PlayerGetDamage(1.5f);
+        HpCorrection.EnemyGetDamage(1f);
         UICtrl.ShowText("你們互相攻擊");
     }
 
