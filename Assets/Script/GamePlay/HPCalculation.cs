@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Project;
+using Project.GamePlay;
 using UnityEngine;
 
 public class HPCalculation : MonoBehaviour
@@ -9,11 +11,14 @@ public class HPCalculation : MonoBehaviour
     [SerializeField] public int PlayerHP;
     [SerializeField] public int PlayerPower;
     [SerializeField] public int EnemyPower;
+    [SerializeField] public int KillNumber;
+    [SerializeField] public int WinNumber;
     [SerializeField] private float PlayerPowerCalculation;
     [SerializeField] private float EnemyPowerCalculation;
     [SerializeField] private float DamageFloat;
 
     public LVManager GetLV;
+    private UIManager UICtrl;
 
     
     
@@ -21,10 +26,12 @@ public class HPCalculation : MonoBehaviour
     void Start()
     {
         GetLV = GetComponent<LVManager>();
-        PlayerHP = GetLV.GetPlayerHP;
-        PlayerPower = GetLV.GetPlayerPower;
-        EnemyHP = GetLV.GetEnemyHP;
-        EnemyPower = GetLV.GetEnemyPower;
+        UICtrl = GetComponent<UIManager>();
+        
+        GameStartNumber();
+        
+        KillNumber = 0;
+        WinNumber = GetLV.WinNeedNumber;
     }
 
     // Update is called once per frame
@@ -32,12 +39,19 @@ public class HPCalculation : MonoBehaviour
     {
         if (PlayerHP <= 0)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            //EventBus.Post(new PlayerLoseDetected());
         }
+
+        if (EnemyHP <= 0)
+        {
+            
+        }
+        
+        UICtrl.PlayerHPText(PlayerHP);
+        UICtrl.EnemyHPText(EnemyHP);
+        
     }
-    
-    
-    
+
     public void PlayerGetDamage(float damage)
     {
         EnemyPowerCalculation = EnemyPower;
@@ -52,5 +66,20 @@ public class HPCalculation : MonoBehaviour
         DamageFloat = PlayerPowerCalculation * damage;
 
         EnemyHP -=  (int) DamageFloat;
+    }
+
+    public void KillEnemy()
+    {
+        KillNumber++;
+        EnemyHP = GetLV.GetEnemyHP;
+    }
+
+    private void GameStartNumber()
+    {
+        GetLV.PlayerHPSet(PlayerHP);
+        GetLV.PlayerPowerSet(PlayerPower);
+        GetLV.EnemyHPSet(EnemyHP);
+        GetLV.EnemyPowerSet(EnemyPower);
+        
     }
 }

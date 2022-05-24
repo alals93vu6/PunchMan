@@ -9,13 +9,14 @@ public class GameIngManager : MonoBehaviour
 {
     private HPCalculation HpCorrection;
     private UIManager UICtrl;
+    private LVManager lvManager;
     
     // Start is called before the first frame update
     void Start()
     {
         HpCorrection = GetComponent<HPCalculation>();
         UICtrl = GetComponent<UIManager>();
-        
+        lvManager = GetComponent<LVManager>();
         
         EventBus.Subscribe<PlayerAndEnemyMutualAttckDetected>(OnPlayerMutualAttack); //互相攻擊
         
@@ -24,6 +25,19 @@ public class GameIngManager : MonoBehaviour
         
         EventBus.Subscribe<PlayerAttackDefendDetected>(OnPlayerNotHitEnemy); //玩家攻擊被對方防禦
         EventBus.Subscribe<PlayerAttackHitDetected>(OnPlayerHitEnemy); //玩家打中
+        
+        EventBus.Subscribe<PlayerWinDetected>(OnPlayerWin); //玩家勝利
+        EventBus.Subscribe<PlayerLoseDetected>(OnPlayerLose); //玩家失敗
+    }
+
+    private void OnPlayerLose(PlayerLoseDetected obj)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+    }
+
+    private void OnPlayerWin(PlayerWinDetected obj)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 
     private void OnPlayerDefend(PlayerDefendAttackDetected obj)

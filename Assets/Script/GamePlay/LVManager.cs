@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,32 +17,29 @@ public class LVManager : MonoBehaviour
     [SerializeField] public int GetPlayerHP;
     [SerializeField] public int GetPlayerPower;
     [SerializeField] public int GetEnemyPower;
+    [SerializeField] public int WinNeedNumber;
 
     private UIManager UICtrl;
     
     // Start is called before the first frame update
-    void Start()
+
+    void Awake()
     {
         UICtrl = GetComponent<UIManager>();
         PlayerHPLV = 20;
         PlayerPowerLV = 3;
         EnemyHPLV = 30;
         EnemyPowerLV = 5;
-        
+
         NowLV = PlayerPrefs.GetInt("NowGameLV");
         NowHPLV = PlayerPrefs.GetInt("NowPlayerHPLV");
         NowPowerLV = PlayerPrefs.GetInt("NowPlayerPowerLV");
         
-        PlayerHPSet();
-        PlayerPowerSet();
-        EnemyHPSet();
-        EnemyPowerSet();
+        FirstGamePlay();
 
-        GetEnemyHP = (int) EnemyHPLV;
-        GetPlayerHP = (int) PlayerHPLV;
-        GetPlayerPower = (int) PlayerPowerLV;
-        GetEnemyPower = (int) EnemyPowerLV;
+        WinNeedNumber = 3 * NowLV - 1 * (NowLV - 1);
     }
+    
 
     // Update is called once per frame
     void Update()
@@ -49,35 +47,55 @@ public class LVManager : MonoBehaviour
         
     }
 
-    private void PlayerHPSet()
+    public void PlayerHPSet(int FinalPlayerHP)
     {
         for (int iA = 0; iA < NowHPLV; iA++)
         {
             PlayerHPLV = PlayerHPLV * 1.5f;
+            GetPlayerHP = (int)PlayerHPLV;
+            FinalPlayerHP = GetPlayerHP;
         }
     }
 
-    private void PlayerPowerSet()
+    public void PlayerPowerSet(int FinalPlayerPower)
     {
         for (int iB = 0; iB < NowPowerLV; iB++)
         {
             PlayerPowerLV = PlayerPowerLV * 1.5f;
+            GetPlayerPower = (int)PlayerPowerLV;
+            FinalPlayerPower = GetPlayerPower;
         }
     }
 
-    private void EnemyHPSet()
+    public void EnemyHPSet(int FinalEnemyHP)
     {
-        for (int iC = 0; iC < NowLV; iC++)
+        for (int iC = 1; iC < NowLV; iC++)
         {
             EnemyHPLV = EnemyHPLV * 1.8f;
+            GetEnemyHP = (int)EnemyHPLV;
+            FinalEnemyHP = GetEnemyHP;
+            
         }
     }
 
-    private void EnemyPowerSet()
+    public void EnemyPowerSet(int FinalEnemyPower)
     {
-        for (int iD = 0; iD < NowLV; iD++)
+        for (int iD = 1; iD < NowLV; iD++)
         {
             EnemyPowerLV = EnemyPowerLV * 1.75f;
+            GetEnemyPower = (int)EnemyPowerLV;
+            FinalEnemyPower = GetEnemyPower;
+        }
+    }
+    
+    
+
+    private void FirstGamePlay()
+    {
+        if (NowLV <= 0)
+        {
+            NowLV = 1;
+            PlayerPrefs.SetInt("NowGameLV",1);
         }
     }
 }
