@@ -7,14 +7,14 @@ using UnityEngine;
 
 public class GameIngManager : MonoBehaviour
 {
-    private HPCalculation HpCorrection;
+    private HPCalculation hpCorrection;
     private UIManager UICtrl;
     private LVManager lvManager;
     
     // Start is called before the first frame update
     void Start()
     {
-        HpCorrection = GetComponent<HPCalculation>();
+        hpCorrection = GetComponent<HPCalculation>();
         UICtrl = GetComponent<UIManager>();
         lvManager = GetComponent<LVManager>();
         
@@ -26,8 +26,24 @@ public class GameIngManager : MonoBehaviour
         EventBus.Subscribe<PlayerAttackDefendDetected>(OnPlayerNotHitEnemy); //玩家攻擊被對方防禦
         EventBus.Subscribe<PlayerAttackHitDetected>(OnPlayerHitEnemy); //玩家打中
         
+        EventBus.Subscribe<EnemydeadDetected>(OnEnemyDead);
+        
         EventBus.Subscribe<PlayerWinDetected>(OnPlayerWin); //玩家勝利
         EventBus.Subscribe<PlayerLoseDetected>(OnPlayerLose); //玩家失敗
+    }
+
+    private void OnEnemyDead(EnemydeadDetected obj)
+    {
+        if (hpCorrection.KillNumber >= hpCorrection.WinNumber -1)
+        {
+            lvManager.PlayerWin();
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        }
+        else
+        {
+            UICtrl.ShowText("擊殺一名敵人");
+            hpCorrection.KillEnemy();
+        }
     }
 
     private void OnPlayerLose(PlayerLoseDetected obj)
@@ -42,32 +58,32 @@ public class GameIngManager : MonoBehaviour
 
     private void OnPlayerDefend(PlayerDefendAttackDetected obj)
     {
-        HpCorrection.PlayerGetDamage(0.2f);
+        hpCorrection.PlayerGetDamage(0.2f);
         UICtrl.ShowText("你防禦住了");
         Debug.Log("ATKC");
     }
 
     private void OnPlayerGetHit(PlayerGetAttackDetected obj)
     {
-        HpCorrection.PlayerGetDamage(1f);
+        hpCorrection.PlayerGetDamage(1f);
         UICtrl.ShowText("你被擊中了");
         Debug.Log("ATKB");
     }
 
     private void OnPlayerHitEnemy(PlayerAttackHitDetected obj)
     {
-        HpCorrection.EnemyGetDamage(1f);
+        hpCorrection.EnemyGetDamage(1f);
     }
 
     private void OnPlayerNotHitEnemy(PlayerAttackDefendDetected obj)
     {
-        HpCorrection.EnemyGetDamage(0.4f);
+        hpCorrection.EnemyGetDamage(0.4f);
     }
 
     private void OnPlayerMutualAttack(PlayerAndEnemyMutualAttckDetected obj)
     {
-        HpCorrection.PlayerGetDamage(1.5f);
-        HpCorrection.EnemyGetDamage(1f);
+        hpCorrection.PlayerGetDamage(1.5f);
+        hpCorrection.EnemyGetDamage(1f);
         UICtrl.ShowText("你們互相攻擊");
     }
 

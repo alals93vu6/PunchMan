@@ -24,7 +24,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/BTurnleftC.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnleftA.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightA.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoBRightMove.cs" />
@@ -68,13 +67,14 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackHitDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackDefendDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/Actor.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerWinDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLoseDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/EnemydeadDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -130,7 +130,8 @@
       <workItem from="1652195705395" duration="2244000" />
       <workItem from="1653220633555" duration="8580000" />
       <workItem from="1653253414824" duration="3249000" />
-      <workItem from="1653395496434" duration="3620000" />
+      <workItem from="1653395496434" duration="3838000" />
+      <workItem from="1653399756937" duration="2709000" />
     </task>
     <servers />
   </component>

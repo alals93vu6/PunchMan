@@ -36,8 +36,8 @@ public class LVManager : MonoBehaviour
         NowPowerLV = PlayerPrefs.GetInt("NowPlayerPowerLV");
         
         FirstGamePlay();
+        GameStartNumberSet();
 
-        WinNeedNumber = 3 * NowLV - 1 * (NowLV - 1);
     }
     
 
@@ -47,48 +47,59 @@ public class LVManager : MonoBehaviour
         
     }
 
-    public void PlayerHPSet(int FinalPlayerHP)
+    public void PlayerWin()
+    {
+        NowLV++;
+        PlayerPrefs.SetInt("NowGameLV",NowLV);
+    }
+
+    public void PlayerHPSet()
     {
         for (int iA = 0; iA < NowHPLV; iA++)
         {
             PlayerHPLV = PlayerHPLV * 1.5f;
-            GetPlayerHP = (int)PlayerHPLV;
-            FinalPlayerHP = GetPlayerHP;
         }
     }
 
-    public void PlayerPowerSet(int FinalPlayerPower)
+    public void PlayerPowerSet()
     {
         for (int iB = 0; iB < NowPowerLV; iB++)
         {
             PlayerPowerLV = PlayerPowerLV * 1.5f;
-            GetPlayerPower = (int)PlayerPowerLV;
-            FinalPlayerPower = GetPlayerPower;
         }
     }
 
-    public void EnemyHPSet(int FinalEnemyHP)
+    public void EnemyHPSet()
     {
         for (int iC = 1; iC < NowLV; iC++)
         {
             EnemyHPLV = EnemyHPLV * 1.8f;
-            GetEnemyHP = (int)EnemyHPLV;
-            FinalEnemyHP = GetEnemyHP;
-            
+
         }
     }
 
-    public void EnemyPowerSet(int FinalEnemyPower)
+    public void EnemyPowerSet()
     {
         for (int iD = 1; iD < NowLV; iD++)
         {
             EnemyPowerLV = EnemyPowerLV * 1.75f;
-            GetEnemyPower = (int)EnemyPowerLV;
-            FinalEnemyPower = GetEnemyPower;
         }
     }
-    
-    
+
+    private void GameStartNumberSet()
+    {
+        PlayerHPSet();
+        PlayerPowerSet();
+        EnemyHPSet();
+        EnemyPowerSet();
+        
+        GetPlayerHP = (int)PlayerHPLV;
+        GetPlayerPower = (int)PlayerPowerLV;
+        GetEnemyHP = (int)EnemyHPLV;
+        GetEnemyPower = (int)EnemyPowerLV;
+        
+        WinNeedNumber = 3 * NowLV - 1 * (NowLV - 1);
+    }
 
     private void FirstGamePlay()
     {

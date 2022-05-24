@@ -112,7 +112,6 @@ public class ActorJudgement : MonoBehaviour
         {
             case BehaviourEnum.EnemyBehaviour.isAttack:
                 
-                UICtrl.ShowText("敵人準備攻擊");
                 Invoke("EnemyAttck",2f);
                     
                 break;
@@ -149,6 +148,7 @@ public class ActorJudgement : MonoBehaviour
             
         }
         
+        actor.DefendOFF();
         CancelInvoke("EnemyAttck");
         UICtrl.PlayerHPText(HPFlot.PlayerHP);
         UICtrl.EnemyHPText(HPFlot.EnemyHP);

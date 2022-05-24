@@ -10,6 +10,7 @@
           <e p="Events" t="Include">
             <e p="EventBus.cs" t="Include" />
             <e p="GamePlay" t="Include">
+              <e p="EnemydeadDetected.cs" t="Include" />
               <e p="PlayerAndEnemyMutualAttckDetected.cs" t="Include" />
               <e p="PlayerAttackDefendDetected.cs" t="Include" />
               <e p="PlayerAttackHitDetected.cs" t="Include" />

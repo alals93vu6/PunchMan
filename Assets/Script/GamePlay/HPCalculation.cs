@@ -30,8 +30,7 @@ public class HPCalculation : MonoBehaviour
         
         GameStartNumber();
         
-        KillNumber = 0;
-        WinNumber = GetLV.WinNeedNumber;
+        
     }
 
     // Update is called once per frame
@@ -39,12 +38,12 @@ public class HPCalculation : MonoBehaviour
     {
         if (PlayerHP <= 0)
         {
-            //EventBus.Post(new PlayerLoseDetected());
+            EventBus.Post(new PlayerLoseDetected());
         }
 
         if (EnemyHP <= 0)
         {
-            
+            EventBus.Post(new EnemydeadDetected());
         }
         
         UICtrl.PlayerHPText(PlayerHP);
@@ -76,10 +75,11 @@ public class HPCalculation : MonoBehaviour
 
     private void GameStartNumber()
     {
-        GetLV.PlayerHPSet(PlayerHP);
-        GetLV.PlayerPowerSet(PlayerPower);
-        GetLV.EnemyHPSet(EnemyHP);
-        GetLV.EnemyPowerSet(EnemyPower);
-        
+        KillNumber = 0;
+        WinNumber = GetLV.WinNeedNumber;
+        PlayerHP = GetLV.GetPlayerHP;
+        PlayerPower = GetLV.GetPlayerPower;
+        EnemyHP = GetLV.GetEnemyHP;
+        EnemyPower = GetLV.GetEnemyPower;
     }
 }

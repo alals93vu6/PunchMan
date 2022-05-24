@@ -308,8 +308,8 @@ GameObject:
   - component: {fileID: 186672954}
   - component: {fileID: 186672955}
   - component: {fileID: 186672953}
-  - component: {fileID: 186672952}
   - component: {fileID: 186672956}
+  - component: {fileID: 186672952}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -399,6 +399,8 @@ MonoBehaviour:
   PlayerHP: 0
   PlayerPower: 0
   EnemyPower: 0
+  KillNumber: 0
+  WinNumber: 0
   PlayerPowerCalculation: 0
   EnemyPowerCalculation: 0
   DamageFloat: 0
@@ -456,6 +458,7 @@ MonoBehaviour:
   GetPlayerHP: 0
   GetPlayerPower: 0
   GetEnemyPower: 0
+  WinNeedNumber: 0
 --- !u!1 &429079684
 GameObject:
   m_ObjectHideFlags: 0
