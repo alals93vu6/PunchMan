@@ -45,8 +45,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGym.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGameStartReady.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/BackHomePageDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
@@ -75,6 +73,8 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -132,6 +132,7 @@
       <workItem from="1653253414824" duration="3249000" />
       <workItem from="1653395496434" duration="3838000" />
       <workItem from="1653399756937" duration="3319000" />
+      <workItem from="1653578715579" duration="464000" />
     </task>
     <servers />
   </component>
