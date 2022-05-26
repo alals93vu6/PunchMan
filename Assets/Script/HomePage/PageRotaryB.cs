@@ -41,6 +41,7 @@ public class PageRotaryB : MonoBehaviour
 
     public void CurrentStatus()
     {
+        
         if(Index == 0)
         {
             EventBus.Post(new InGameStartReady());
