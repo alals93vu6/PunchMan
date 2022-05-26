@@ -41,19 +41,20 @@ public class PageRotaryB : MonoBehaviour
 
     public void CurrentStatus()
     {
+        
         if(Index == 0)
         {
             EventBus.Post(new InGameStartReady());
         }
         else if(Index == 1)
         {
-            EventBus.Post(new InGym());
+            EventBus.Post(new InShop());
             
         }
         else
         {
-            EventBus.Post(new InShop());
             
+            EventBus.Post(new InGym());
         }
     }
 
