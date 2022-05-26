@@ -112,12 +112,12 @@ public class PageDetection : MonoBehaviour
             EventBus.Post(new GameStartDetected());
         }
         
-        if(pageRotary.Index == 1)
+        if(pageRotary.Index == 2)
         {
             EventBus.Post(new HitGymDetected());
         }
         
-        if(pageRotary.Index == 2)
+        if(pageRotary.Index == 1)
         {
             EventBus.Post(new HitShopDetected());
         }
