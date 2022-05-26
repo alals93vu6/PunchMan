@@ -25,7 +25,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnleftA.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightA.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoBRightMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/BtoCRightMove.cs" />
@@ -76,6 +75,7 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
+      <option value="$PROJECT_DIR$/Assets/TestOWO.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -134,6 +134,7 @@
       <workItem from="1653395496434" duration="3838000" />
       <workItem from="1653399756937" duration="3319000" />
       <workItem from="1653578715579" duration="464000" />
+      <workItem from="1653584038634" duration="16000" />
     </task>
     <servers />
   </component>
