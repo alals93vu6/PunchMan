@@ -9,11 +9,16 @@ public class HomePageUIManager : MonoBehaviour
 
     public Text Lvtext;
 
+    public Text MoneyText;
+
     private int nowLV;
+
+    private int nowMoney;
     // Start is called before the first frame update
     void Start()
     {
         ShowNowLV();
+        ShowMoney();
     }
 
     // Update is called once per frame
@@ -31,6 +36,12 @@ public class HomePageUIManager : MonoBehaviour
             PlayerPrefs.SetInt("NowGameLV",1);
         }
         Lvtext.text = "第" + nowLV + "關";
+    }
+
+    private void ShowMoney()
+    {
+        nowMoney = PlayerPrefs.GetInt("PlayerMoney");
+        MoneyText.text = "：" + nowMoney;
     }
 
     public void PlayerInReady()

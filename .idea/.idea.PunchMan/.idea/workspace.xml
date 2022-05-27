@@ -15,6 +15,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/GameStartButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -25,7 +26,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/CTurnrightA.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/AtoBRightMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/BtoCRightMove.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/CtoARightMove.cs" />
@@ -70,12 +70,13 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/EnemydeadDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/TestOWO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -136,6 +137,7 @@
       <workItem from="1653578715579" duration="464000" />
       <workItem from="1653584038634" duration="93000" />
       <workItem from="1653656217935" duration="1115000" />
+      <workItem from="1653672512769" duration="3503000" />
     </task>
     <servers />
   </component>

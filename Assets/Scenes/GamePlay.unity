@@ -310,6 +310,7 @@ GameObject:
   - component: {fileID: 186672953}
   - component: {fileID: 186672956}
   - component: {fileID: 186672952}
+  - component: {fileID: 186672957}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -459,6 +460,22 @@ MonoBehaviour:
   GetPlayerPower: 0
   GetEnemyPower: 0
   WinNeedNumber: 0
+--- !u!114 &186672957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186672948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1037748b5ba2ccf4696006e39d7c505c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoneyFlot: 0
+  GetMoney: 0
+  GameNowLV: 0
+  PlayerHaveMoney: 0
 --- !u!1 &429079684
 GameObject:
   m_ObjectHideFlags: 0

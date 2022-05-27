@@ -10,6 +10,7 @@ public class GameIngManager : MonoBehaviour
     private HPCalculation hpCorrection;
     private UIManager UICtrl;
     private LVManager lvManager;
+    private AwardSettlement GameOverSet;
     
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection = GetComponent<HPCalculation>();
         UICtrl = GetComponent<UIManager>();
         lvManager = GetComponent<LVManager>();
+        GameOverSet = GetComponent<AwardSettlement>();
         
         EventBus.Subscribe<PlayerAndEnemyMutualAttckDetected>(OnPlayerMutualAttack); //互相攻擊
         
@@ -37,6 +39,7 @@ public class GameIngManager : MonoBehaviour
         if (hpCorrection.KillNumber >= hpCorrection.WinNumber -1)
         {
             lvManager.PlayerWin();
+            GameOverSet.GameOverSettlement();
             UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
         }
         else
@@ -48,6 +51,7 @@ public class GameIngManager : MonoBehaviour
 
     private void OnPlayerLose(PlayerLoseDetected obj)
     {
+        GameOverSet.GameOverSettlement();
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 
