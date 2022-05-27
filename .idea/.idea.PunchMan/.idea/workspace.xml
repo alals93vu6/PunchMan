@@ -44,7 +44,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InShop.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGym.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGameStartReady.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/BackHomePageDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
@@ -64,7 +63,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttackDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackHitDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackDefendDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/Actor.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerWinDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLoseDetected.cs" />
@@ -76,6 +74,8 @@
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/TestOWO.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -134,7 +134,8 @@
       <workItem from="1653395496434" duration="3838000" />
       <workItem from="1653399756937" duration="3319000" />
       <workItem from="1653578715579" duration="464000" />
-      <workItem from="1653584038634" duration="16000" />
+      <workItem from="1653584038634" duration="93000" />
+      <workItem from="1653656217935" duration="1115000" />
     </task>
     <servers />
   </component>

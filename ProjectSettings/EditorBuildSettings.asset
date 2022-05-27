@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: a00821911618d614f98ab7902d45c8c6
+  - enabled: 1
+    path: Assets/Scenes/Gym.unity
+    guid: 9170b03eb051eb044a3f43f7998bf7f4
   m_configObjects: {}

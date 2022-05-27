@@ -6,16 +6,31 @@ using UnityEngine.UI;
 public class HomePageUIManager : MonoBehaviour
 {
     public Text CurrenStatusText;
+
+    public Text Lvtext;
+
+    private int nowLV;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ShowNowLV();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void ShowNowLV()
+    {
+        nowLV = PlayerPrefs.GetInt("NowGameLV");
+        if (nowLV <= 1)
+        {
+            nowLV = 1;
+            PlayerPrefs.SetInt("NowGameLV",1);
+        }
+        Lvtext.text = "第" + nowLV + "關";
     }
 
     public void PlayerInReady()

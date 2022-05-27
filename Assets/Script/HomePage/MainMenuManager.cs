@@ -64,7 +64,7 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnHitGymDetected(HitGymDetected obj)
     {
-        Debug.Log("訓練");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Gym");
     }
 
     private void OnHitShopDetected(HitShopDetected obj)
