@@ -73,12 +73,12 @@
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/AllReset.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/SettlementButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/YouQi/Now_Scenes.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/AllReset.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -142,7 +142,7 @@
       <workItem from="1653672512769" duration="3503000" />
       <workItem from="1654014363555" duration="313000" />
       <workItem from="1654022391832" duration="2727000" />
-      <workItem from="1654027661250" duration="209000" />
+      <workItem from="1654027661250" duration="798000" />
     </task>
     <servers />
   </component>

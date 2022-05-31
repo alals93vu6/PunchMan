@@ -16,6 +16,7 @@ public class AllReset : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F3))
         {
             PlayerPrefs.SetInt("NowGameLV",1);
+            PlayerPrefs.SetInt("PlayerMoney",0);
             UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
         }
     }
