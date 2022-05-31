@@ -40,6 +40,10 @@ public class HPCalculation : MonoBehaviour
         {
             EventBus.Post(new PlayerLoseDetected());
         }
+        else
+        {
+            UICtrl.ShowGamePlayingUI();
+        }
 
         if (EnemyHP <= 0)
         {

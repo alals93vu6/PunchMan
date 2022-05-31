@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
+          <e p="AllReset.cs" t="Include" />
           <e p="Events" t="Include">
             <e p="EventBus.cs" t="Include" />
             <e p="GamePlay" t="Include">
@@ -48,6 +49,7 @@
             <e p="HPCalculation.cs" t="Include" />
             <e p="Instance.cs" t="Include" />
             <e p="LVManager.cs" t="Include" />
+            <e p="SettlementButton.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
@@ -63,6 +65,13 @@
             <e p="PageDetection.cs" t="Include" />
             <e p="PageRotary.cs" t="Include" />
             <e p="PageRotaryB.cs" t="Include" />
+          </e>
+          <e p="YouQi" t="Include">
+            <e p="Change_Scence.cs" t="Include" />
+            <e p="Now_Scenes.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="Dont_del_unity.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Test" t="Include">

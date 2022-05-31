@@ -40,7 +40,7 @@ public class GameIngManager : MonoBehaviour
         {
             lvManager.PlayerWin();
             GameOverSet.GameOverSettlement();
-            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            UICtrl.ShowSettementUI();
         }
         else
         {
@@ -52,12 +52,14 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerLose(PlayerLoseDetected obj)
     {
         GameOverSet.GameOverSettlement();
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        UICtrl.ShowSettementUI();
     }
 
     private void OnPlayerWin(PlayerWinDetected obj)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        GameOverSet.GameOverSettlement();
+        UICtrl.ShowSettementUI();
+        lvManager.PlayerWin();
     }
 
     private void OnPlayerDefend(PlayerDefendAttackDetected obj)
@@ -90,15 +92,8 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.EnemyGetDamage(1f);
         UICtrl.ShowText("你們互相攻擊");
     }
-
-    private void OnPlayerLATK()
-    {
-        
-    }
+    
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

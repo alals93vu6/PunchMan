@@ -5,6 +5,7 @@ using UnityEngine;
 public class AwardSettlement : MonoBehaviour
 {
     private HPCalculation GetHP;
+    private UIManager UICtrl;
 
     [SerializeField] private float MoneyFlot;
     [SerializeField] private int GetMoney;
@@ -15,10 +16,9 @@ public class AwardSettlement : MonoBehaviour
     void Start()
     {
         GetHP = GetComponent<HPCalculation>();
+        UICtrl = GetComponent<UIManager>();
 
-        MoneyFlot = 500;
-        
-        GameOverSettlement();
+        MoneyFlot = 500f;
 
         PlayerHaveMoney = PlayerPrefs.GetInt("PlayerMoney");
         GameNowLV = PlayerPrefs.GetInt("NowLV");
@@ -33,7 +33,7 @@ public class AwardSettlement : MonoBehaviour
 
     public void GameOverSettlement()
     {
-        for (int i = -5; i < GameNowLV; i++)
+        for (int i = 1; i < GameNowLV; i++)
         {
             MoneyFlot = MoneyFlot * 1.5f;
             
@@ -41,7 +41,10 @@ public class AwardSettlement : MonoBehaviour
         MoneyFlot = MoneyFlot * GetHP.KillNumber;
         GetMoney = (int) MoneyFlot;
         PlayerHaveMoney = PlayerHaveMoney + GetMoney;
+        
         PlayerPrefs.SetInt("TheSettlement",GetMoney);
         PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+        UICtrl.ShowGetMoney(GetMoney);
+        UICtrl.ShowAllMoney(PlayerHaveMoney);
     }
 }
