@@ -38,5 +38,11 @@ public class Now_Scenes : MonoBehaviour
         {
             PageDetection.page_now = 3;
         }
+
+        if (now == 1)
+        {
+            PageDetection.page_now = 0;
+        }
+
     }
 }
