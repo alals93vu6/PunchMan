@@ -19,6 +19,7 @@ public class BackHomePageButton : MonoBehaviour
 
     private void BackGomePage()
     {
+        PageDetection.page_now = 1;
         EventBus.Post(new BackHomePageDetected());
     }
 }

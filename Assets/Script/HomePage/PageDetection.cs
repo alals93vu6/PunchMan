@@ -115,11 +115,13 @@ public class PageDetection : MonoBehaviour
         if(pageRotary.Index == 2)
         {
             EventBus.Post(new HitGymDetected());
+            page_now = 3;
         }
         
         if(pageRotary.Index == 1)
         {
             EventBus.Post(new HitShopDetected());
+            page_now = 2;
         }
     }
 }
