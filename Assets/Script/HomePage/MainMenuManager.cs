@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Project;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -59,17 +60,17 @@ public class MainMenuManager : MonoBehaviour
 
     private void OnGameStartDetected(GameStartDetected obj)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("GamePlay");
     }
 
     private void OnHitGymDetected(HitGymDetected obj)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Gym");
+        SceneManager.LoadScene("Gym");
     }
 
     private void OnHitShopDetected(HitShopDetected obj)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
+        SceneManager.LoadScene("Shop");
     }
 
     
