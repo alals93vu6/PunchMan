@@ -45,6 +45,7 @@
             <e p="AnimatorManager.cs" t="Include" />
             <e p="AwardSettlement.cs" t="Include" />
             <e p="BehaviourEnum.cs" t="Include" />
+            <e p="EnemyAnimatorManager.cs" t="Include" />
             <e p="GameIngManager.cs" t="Include" />
             <e p="HPCalculation.cs" t="Include" />
             <e p="Instance.cs" t="Include" />

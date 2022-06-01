@@ -44,6 +44,7 @@ public class ActorJudgement : MonoBehaviour
                     {
                         //EnemyGetDamage(3); //打中
                         EventBus.Post(new PlayerAttackHitDetected());
+                        AnimatorManager.instance.PlayerLeftAttack();
                         UICtrl.ShowText("你擊出左拳");
                         
                     }
@@ -51,6 +52,7 @@ public class ActorJudgement : MonoBehaviour
                     {
                         //EnemyGetDamage(1); //被防禦到了
                         EventBus.Post(new PlayerAttackDefendDetected());
+                        AnimatorManager.instance.PlayerLeftAttack();
                         UICtrl.ShowText("你擊出左拳");
                         
                     }
@@ -74,6 +76,7 @@ public class ActorJudgement : MonoBehaviour
                     {
                         //EnemyGetDamage(3);
                         EventBus.Post(new PlayerAttackHitDetected());
+                        AnimatorManager.instance.PlayerRightAttack();
                         UICtrl.ShowText("你擊出右拳");
                         
                     }
@@ -81,6 +84,7 @@ public class ActorJudgement : MonoBehaviour
                     {
                         //EnemyGetDamage(1);
                         EventBus.Post(new PlayerAttackDefendDetected());
+                        AnimatorManager.instance.PlayerRightAttack();
                         UICtrl.ShowText("你擊出右拳");
                         
                     }
@@ -124,7 +128,7 @@ public class ActorJudgement : MonoBehaviour
         {
             //PlayerGetDamage(1);
             EventBus.Post(new PlayerDefendAttackDetected());
-            
+            AnimatorManager.instance.PlayerGetDefend();
             actorEnemy.ResetBehaviour();
         }
         else

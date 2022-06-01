@@ -74,6 +74,7 @@ public class Actor : MonoBehaviour
         {
             actorBehaviour = BehaviourEnum.ActorBehaviour.isDefend;
             actorJudgement.PlayerJudge();
+            AnimatorManager.instance.PlayerDefend();
             IsDefend = true;
             Invoke("DefendOFF",3f);
         }
@@ -82,6 +83,7 @@ public class Actor : MonoBehaviour
             actorBehaviour = BehaviourEnum.ActorBehaviour.isRightAttack;
             actorJudgement.PlayerJudge();
             actorBehaviour = BehaviourEnum.ActorBehaviour.isIdle;
+            
         }
         else if (PlayerIsLeft && !PlayerIsRight)
         {
