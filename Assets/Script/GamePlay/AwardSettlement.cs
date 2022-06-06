@@ -41,8 +41,8 @@ public class AwardSettlement : MonoBehaviour
         GetMoney = (int) MoneyFlot;
         PlayerHaveMoney = PlayerHaveMoney + GetMoney;
         
-        //PlayerPrefs.SetInt("TheSettlement",GetMoney);
-        //PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+        PlayerPrefs.SetInt("TheSettlement",GetMoney);
+        PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
         UICtrl.ShowGetMoney(GetMoney);
         UICtrl.ShowAllMoney(PlayerHaveMoney);
 

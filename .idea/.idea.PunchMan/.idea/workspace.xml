@@ -77,9 +77,9 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/Actor.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AnimatorManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -144,7 +144,7 @@
       <workItem from="1654014363555" duration="313000" />
       <workItem from="1654022391832" duration="2727000" />
       <workItem from="1654027661250" duration="4444000" />
-      <workItem from="1654494651447" duration="3227000" />
+      <workItem from="1654494651447" duration="3449000" />
     </task>
     <servers />
   </component>
