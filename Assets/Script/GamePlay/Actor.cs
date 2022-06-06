@@ -143,6 +143,7 @@ public class Actor : MonoBehaviour
     public void DefendOFF()
     {
         IsDefend = false;
+        AnimatorManager.instance.PlayerDefendOver();
         actorBehaviour = BehaviourEnum.ActorBehaviour.isIdle;
     }
 

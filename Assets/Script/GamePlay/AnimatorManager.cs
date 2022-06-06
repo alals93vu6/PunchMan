@@ -47,10 +47,17 @@ public class AnimatorManager : MonoBehaviour
     public void PlayerDefend()
     {
         AN.Play("Attack_to_Def");
+        AN.SetBool("Is_Attack_to_Def",false);
     }
 
     public void PlayerGetDefend()
     {
         AN.Play("Def_to_Attack");
     }
+
+    public void PlayerDefendOver()
+    {
+        AN.SetBool("Is_Attack_to_Def",true);
+    }
+    
 }

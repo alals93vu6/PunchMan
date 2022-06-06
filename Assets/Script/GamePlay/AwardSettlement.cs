@@ -21,7 +21,7 @@ public class AwardSettlement : MonoBehaviour
         MoneyFlot = 500f;
 
         PlayerHaveMoney = PlayerPrefs.GetInt("PlayerMoney");
-        GameNowLV = PlayerPrefs.GetInt("NowLV");
+        GameNowLV = PlayerPrefs.GetInt("NowGameLV");
 
     }
 
@@ -36,15 +36,16 @@ public class AwardSettlement : MonoBehaviour
         for (int i = 1; i < GameNowLV; i++)
         {
             MoneyFlot = MoneyFlot * 1.5f;
-            
         }
         MoneyFlot = MoneyFlot * GetHP.KillNumber;
         GetMoney = (int) MoneyFlot;
         PlayerHaveMoney = PlayerHaveMoney + GetMoney;
         
-        PlayerPrefs.SetInt("TheSettlement",GetMoney);
-        PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+        //PlayerPrefs.SetInt("TheSettlement",GetMoney);
+        //PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
         UICtrl.ShowGetMoney(GetMoney);
         UICtrl.ShowAllMoney(PlayerHaveMoney);
+
+        Debug.Log("AAA");
     }
 }

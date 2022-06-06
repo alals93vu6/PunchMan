@@ -36,7 +36,7 @@ public class GameIngManager : MonoBehaviour
 
     private void OnEnemyDead(EnemydeadDetected obj)
     {
-        if (hpCorrection.KillNumber >= hpCorrection.WinNumber -1)
+        if (hpCorrection.KillNumber >= hpCorrection.WinNumber)
         {
             lvManager.PlayerWin();
             GameOverSet.GameOverSettlement();
@@ -53,6 +53,7 @@ public class GameIngManager : MonoBehaviour
     {
         GameOverSet.GameOverSettlement();
         UICtrl.ShowSettementUI();
+        Debug.Log("BBB");
     }
 
     private void OnPlayerWin(PlayerWinDetected obj)
@@ -65,6 +66,7 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerDefend(PlayerDefendAttackDetected obj)
     {
         hpCorrection.PlayerGetDamage(0.2f);
+        hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你防禦住了");
         Debug.Log("ATKC");
     }
@@ -72,6 +74,7 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerGetHit(PlayerGetAttackDetected obj)
     {
         hpCorrection.PlayerGetDamage(1f);
+        hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你被擊中了");
         Debug.Log("ATKB");
     }
@@ -79,17 +82,20 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerHitEnemy(PlayerAttackHitDetected obj)
     {
         hpCorrection.EnemyGetDamage(1f);
+        hpCorrection.HPCUpDeta();
     }
 
     private void OnPlayerNotHitEnemy(PlayerAttackDefendDetected obj)
     {
         hpCorrection.EnemyGetDamage(0.4f);
+        hpCorrection.HPCUpDeta();
     }
 
     private void OnPlayerMutualAttack(PlayerAndEnemyMutualAttckDetected obj)
     {
         hpCorrection.PlayerGetDamage(1.5f);
         hpCorrection.EnemyGetDamage(1f);
+        hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你們互相攻擊");
     }
     

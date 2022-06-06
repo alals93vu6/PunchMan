@@ -29,6 +29,7 @@ public class HPCalculation : MonoBehaviour
         UICtrl = GetComponent<UIManager>();
         
         GameStartNumber();
+        HPCUpDeta();
         
         
     }
@@ -36,23 +37,8 @@ public class HPCalculation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHP <= 0)
-        {
-            EventBus.Post(new PlayerLoseDetected());
-        }
-        else
-        {
-            UICtrl.ShowGamePlayingUI();
-        }
-
-        if (EnemyHP <= 0)
-        {
-            EventBus.Post(new EnemydeadDetected());
-        }
-        
         UICtrl.PlayerHPText(PlayerHP);
         UICtrl.EnemyHPText(EnemyHP);
-        
     }
 
     public void PlayerGetDamage(float damage)
@@ -75,6 +61,23 @@ public class HPCalculation : MonoBehaviour
     {
         KillNumber++;
         EnemyHP = GetLV.GetEnemyHP;
+    }
+
+    public void HPCUpDeta()
+    {
+        if (PlayerHP <= 0)
+        {
+            EventBus.Post(new PlayerLoseDetected());
+        }
+        else
+        {
+            UICtrl.ShowGamePlayingUI();
+        }
+
+        if (EnemyHP <= 0)
+        {
+            EventBus.Post(new EnemydeadDetected());
+        }
     }
 
     private void GameStartNumber()
