@@ -32,8 +32,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKDefendDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerRATKHitDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerRATKDefendDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerDefendEnemyATK.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttckByEnemy.cs" />
@@ -83,6 +81,8 @@
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/EnemyAnimatorManager1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/EnemyAnimatorManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -151,7 +151,7 @@
       <workItem from="1654572867842" duration="2314000" />
       <workItem from="1654609597260" duration="3350000" />
       <workItem from="1654613060064" duration="2841000" />
-      <workItem from="1654616044883" duration="1353000" />
+      <workItem from="1654616044883" duration="2493000" />
     </task>
     <servers />
   </component>
