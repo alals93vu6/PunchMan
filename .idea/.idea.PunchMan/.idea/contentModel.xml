@@ -25,6 +25,7 @@
               <e p="HitLvUPButton.cs" t="Include" />
               <e p="LackOfMoney.cs" t="Include" />
               <e p="PlayerBackHomePage.cs" t="Include" />
+              <e p="PlayerLVUP.cs" t="Include" />
               <e p="WatchADS.cs" t="Include" />
             </e>
             <e p="HomePageEventts" t="Include">
@@ -43,6 +44,7 @@
             </e>
           </e>
           <e p="GameGym" t="Include">
+            <e p="GymLVManager.cs" t="Include" />
             <e p="GymManager.cs" t="Include" />
             <e p="GymUIManager.cs" t="Include" />
           </e>
