@@ -22,6 +22,12 @@ public class GymManager : MonoBehaviour
         EventBus.Subscribe<MoneyIsEnoughDetected>(OnReadyLVUP);
         EventBus.Subscribe<MoneyIsNotEnoughDetected>(CantLVUP);
         EventBus.Subscribe<BackHomePageDetected>(OnBackHomePage);
+        EventBus.Subscribe<HitGymButtonDetected>(OnConditionJudgment);
+    }
+
+    private void OnConditionJudgment(HitGymButtonDetected obj)
+    {
+        GetGymLV.NowCondition();
     }
 
     private void OnBackHomePage(BackHomePageDetected obj)
@@ -37,7 +43,7 @@ public class GymManager : MonoBehaviour
 
     private void CantLVUP(MoneyIsNotEnoughDetected obj)
     {
-        throw new System.NotImplementedException();
+        GymUICtrl.EnoughMoney();
     }
 
     private void OnPlayerLVUP(PlayerLVUPDetected obj)

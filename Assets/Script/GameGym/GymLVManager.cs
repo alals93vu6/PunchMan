@@ -32,6 +32,7 @@ public class GymLVManager : MonoBehaviour
         
         NeedMoneySet();
         NeedTimeSet();
+        GymUI.ReadyUP();
     }
 
     // Update is called once per frame
@@ -78,11 +79,14 @@ public class GymLVManager : MonoBehaviour
         if (PlayerMoney >= PlayerNeedMoney)
         {
             EventBus.Post(new MoneyIsEnoughDetected());
+            Debug.Log("AAB");
         }
         else
         {
             EventBus.Post(new MoneyIsNotEnoughDetected());
+            Debug.Log("AAC");
         }
+        Debug.Log("AAA");
     }
 
     public void PlayerLVIsUP()
@@ -91,5 +95,19 @@ public class GymLVManager : MonoBehaviour
         PlayerLV++;
         PlayerPrefs.SetInt("NowPlayerLV",PlayerLV);
         NeedTimeSet();
+    }
+
+    public void NowCondition()
+    {
+        if (LVUPing)
+        {
+            EventBus.Post(new WatchADSDetected());
+            
+        }
+        else
+        {
+            EventBus.Post(new HitLVUPButtonDetected());
+            
+        }
     }
 }
