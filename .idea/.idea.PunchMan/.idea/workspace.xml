@@ -29,12 +29,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" />
-      <option value="$PROJECT_DIR$/Assets/PageTest.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageLeftmove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageRightmove.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageLeftMoveDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/PageRightMoveDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InShoop.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/HitGymDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/HitShoopDetected.cs" />
@@ -80,6 +74,12 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/PlayerBackHomePage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/HitLvUPButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/WatchADS.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/EnoughMoney.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/LackOfMoney.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -144,7 +144,8 @@
       <workItem from="1654014363555" duration="313000" />
       <workItem from="1654022391832" duration="2727000" />
       <workItem from="1654027661250" duration="4444000" />
-      <workItem from="1654494651447" duration="3449000" />
+      <workItem from="1654494651447" duration="4545000" />
+      <workItem from="1654572867842" duration="1651000" />
     </task>
     <servers />
   </component>

@@ -20,6 +20,13 @@
               <e p="PlayerLoseDetected.cs" t="Include" />
               <e p="PlayerWinDetected.cs" t="Include" />
             </e>
+            <e p="Gym" t="Include">
+              <e p="EnoughMoney.cs" t="Include" />
+              <e p="HitLvUPButton.cs" t="Include" />
+              <e p="LackOfMoney.cs" t="Include" />
+              <e p="PlayerBackHomePage.cs" t="Include" />
+              <e p="WatchADS.cs" t="Include" />
+            </e>
             <e p="HomePageEventts" t="Include">
               <e p="GameStartDetected.cs" t="Include" />
               <e p="HitGymDetected.cs" t="Include" />
@@ -34,6 +41,10 @@
             <e p="Shop" t="Include">
               <e p="BackHomePageDetected.cs" t="Include" />
             </e>
+          </e>
+          <e p="GameGym" t="Include">
+            <e p="GymManager.cs" t="Include" />
+            <e p="GymUIManager.cs" t="Include" />
           </e>
           <e p="GameOver" t="Include">
             <e p="GameOverbackHome.cs" t="Include" />
