@@ -1,6 +1,6 @@
 ﻿namespace Project.Gym
 {
-    public class PlayerBackHomePage
+    public class MoneyIsEnoughDetected
     {
         
     }

@@ -20,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/FirstPlay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/SettlementButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/EnemyAnimatorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -30,15 +31,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/HitShoopDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InShop.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGym.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/HomePageEventts/InGameStartReady.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/BackHomePageDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GameShop/BackHomePageButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GameOver/GameOverbackHome.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/AltF4Button.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLeftAttck.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKHitDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLATKDefft.cs" />
@@ -60,7 +52,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
       <option value="$PROJECT_DIR$/Assets/TestOWO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/SettlementButton.cs" />
@@ -78,9 +69,19 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/WatchADS.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/EnoughMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/LackOfMoney.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/PlayerLVUP.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/AAA.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/HitLVUPButtonDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/WatchADSDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/PlayerLVUPDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/BackHomePageDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/MoneyIsEnoughDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/MoneyIsNotEnoughDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/HomePage/FirstPlay.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -147,7 +148,8 @@
       <workItem from="1654027661250" duration="4444000" />
       <workItem from="1654494651447" duration="4545000" />
       <workItem from="1654572867842" duration="2314000" />
-      <workItem from="1654609597260" duration="1594000" />
+      <workItem from="1654609597260" duration="3350000" />
+      <workItem from="1654613060064" duration="2841000" />
     </task>
     <servers />
   </component>

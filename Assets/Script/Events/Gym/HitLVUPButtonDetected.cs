@@ -1,6 +1,6 @@
 ﻿namespace Project.Gym
 {
-    public class HitLvUPButton
+    public class HitLVUPButtonDetected
     {
         
     }

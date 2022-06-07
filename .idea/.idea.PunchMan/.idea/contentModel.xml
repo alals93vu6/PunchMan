@@ -6,6 +6,11 @@
     <e p="F:\GitHub\PunchMan" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Music" t="Include">
+          <e p="BGM.cs" t="Include" />
+          <e p="Music.cs" t="Include" />
+          <e p="Music_Des.cs" t="Include" />
+        </e>
         <e p="Script" t="Include">
           <e p="AllReset.cs" t="Include" />
           <e p="Events" t="Include">
@@ -21,12 +26,12 @@
               <e p="PlayerWinDetected.cs" t="Include" />
             </e>
             <e p="Gym" t="Include">
-              <e p="EnoughMoney.cs" t="Include" />
-              <e p="HitLvUPButton.cs" t="Include" />
-              <e p="LackOfMoney.cs" t="Include" />
-              <e p="PlayerBackHomePage.cs" t="Include" />
-              <e p="PlayerLVUP.cs" t="Include" />
-              <e p="WatchADS.cs" t="Include" />
+              <e p="BackHomePageDetected.cs" t="Include" />
+              <e p="HitLVUPButtonDetected.cs" t="Include" />
+              <e p="MoneyIsEnoughDetected.cs" t="Include" />
+              <e p="MoneyIsNotEnoughDetected.cs" t="Include" />
+              <e p="PlayerLVUPDetected.cs" t="Include" />
+              <e p="WatchADSDetected.cs" t="Include" />
             </e>
             <e p="HomePageEventts" t="Include">
               <e p="GameStartDetected.cs" t="Include" />
@@ -46,6 +51,7 @@
           <e p="GameGym" t="Include">
             <e p="GymLVManager.cs" t="Include" />
             <e p="GymManager.cs" t="Include" />
+            <e p="GymTimeManager.cs" t="Include" />
             <e p="GymUIManager.cs" t="Include" />
           </e>
           <e p="GameOver" t="Include">
@@ -73,6 +79,7 @@
           </e>
           <e p="HomePage" t="Include">
             <e p="AltF4Button.cs" t="Include" />
+            <e p="FirstPlay.cs" t="Include" />
             <e p="GameStartButton.cs" t="Include" />
             <e p="HomePageUIManager.cs" t="Include" />
             <e p="MainMenuManager.cs" t="Include" />

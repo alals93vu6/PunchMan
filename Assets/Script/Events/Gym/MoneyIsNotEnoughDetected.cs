@@ -1,6 +1,6 @@
 ﻿namespace Project.Gym
 {
-    public class PlayerLVUP
+    public class MoneyIsNotEnoughDetected
     {
         
     }
