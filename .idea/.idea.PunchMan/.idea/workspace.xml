@@ -53,7 +53,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/AllReset.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/Actor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AnimatorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/PlayerBackHomePage.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/HitLvUPButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/WatchADS.cs" />
@@ -79,11 +78,12 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/EnemyAnimatorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/CloseADS.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ADSButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AnimatorManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -153,7 +153,7 @@
       <workItem from="1654609597260" duration="3350000" />
       <workItem from="1654613060064" duration="2841000" />
       <workItem from="1654616044883" duration="3058000" />
-      <workItem from="1654756941457" duration="6293000" />
+      <workItem from="1654756941457" duration="7061000" />
     </task>
     <servers />
   </component>

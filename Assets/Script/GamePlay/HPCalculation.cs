@@ -82,13 +82,8 @@ public class HPCalculation : MonoBehaviour
             EventBus.Post(new PlayerLoseDetected());
             EnemyCtrl.IsOver = true;
             IsPlaying = false;
-            Debug.Log("VAR");
         }
-        else
-        {
-            UICtrl.ShowGamePlayingUI();
-        }
-
+        
         if (EnemyHP <= 0)
         {
             EventBus.Post(new EnemydeadDetected());

@@ -29,6 +29,8 @@ public class UIManager : Instance<UIManager>
         GameStart();
         PlayADS = false;
         ADSButton.SetActive(false);
+        
+        ShowGamePlayingUI();
     }
 
     // Update is called once per frame
@@ -81,6 +83,7 @@ public class UIManager : Instance<UIManager>
         PlayingUI.SetActive(true);
         SettlementUI.SetActive(false);
         ADSUI.SetActive(false);
+        Debug.Log("VAR");
     }
 
     public void ShowADSUI()

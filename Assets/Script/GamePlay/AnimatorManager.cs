@@ -59,5 +59,9 @@ public class AnimatorManager : MonoBehaviour
     {
         AN.SetBool("Is_Attack_to_Def",true);
     }
-    
+
+    public void PlayerLose()
+    {
+        AN.Play("Dead");
+    }
 }

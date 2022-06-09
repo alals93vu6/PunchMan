@@ -38,6 +38,7 @@ public class GameIngManager : MonoBehaviour
     private void OnCloseADS(CloseADS obj)
     {
         UICtrl.ShowSettementUI();
+        AnimatorManager.instance.PlayerLose();
     }
 
     private void OnEnemyDead(EnemydeadDetected obj)
