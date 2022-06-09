@@ -17,8 +17,11 @@ public class HPCalculation : MonoBehaviour
     [SerializeField] private float EnemyPowerCalculation;
     [SerializeField] private float DamageFloat;
 
+    public bool IsPlaying;
+    
     public LVManager GetLV;
     private UIManager UICtrl;
+    public ActorEnemy EnemyCtrl;
 
     
     
@@ -27,6 +30,9 @@ public class HPCalculation : MonoBehaviour
     {
         GetLV = GetComponent<LVManager>();
         UICtrl = GetComponent<UIManager>();
+        EnemyCtrl = GetComponent<ActorEnemy>();
+
+        IsPlaying = true;
         
         GameStartNumber();
         HPCUpDeta();
@@ -43,18 +49,24 @@ public class HPCalculation : MonoBehaviour
 
     public void PlayerGetDamage(float damage)
     {
-        EnemyPowerCalculation = EnemyPower;
-        DamageFloat = EnemyPowerCalculation * damage;
-        
-        PlayerHP -= (int) DamageFloat;
+        if (IsPlaying)
+        {
+            EnemyPowerCalculation = EnemyPower;
+            DamageFloat = EnemyPowerCalculation * damage;
+                                
+            PlayerHP -= (int) DamageFloat;
+        }
     }
     
     public void EnemyGetDamage(float damage)
     {
-        PlayerPowerCalculation = PlayerPower;
-        DamageFloat = PlayerPowerCalculation * damage;
-
-        EnemyHP -=  (int) DamageFloat;
+        if (IsPlaying)
+        {
+            PlayerPowerCalculation = PlayerPower;
+            DamageFloat = PlayerPowerCalculation * damage;
+                        
+            EnemyHP -=  (int) DamageFloat;
+        }
     }
 
     public void KillEnemy()
@@ -65,9 +77,12 @@ public class HPCalculation : MonoBehaviour
 
     public void HPCUpDeta()
     {
-        if (PlayerHP <= 0)
+        if (PlayerHP <= 0 && IsPlaying)
         {
             EventBus.Post(new PlayerLoseDetected());
+            EnemyCtrl.IsOver = true;
+            IsPlaying = false;
+            Debug.Log("VAR");
         }
         else
         {

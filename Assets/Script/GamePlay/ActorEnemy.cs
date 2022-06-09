@@ -7,10 +7,13 @@ public class ActorEnemy : MonoBehaviour
     [SerializeField] private BehaviourEnum.EnemyBehaviour actorBehaviour = BehaviourEnum.EnemyBehaviour.isAttack;
 
     [SerializeField] private ActorJudgement actorJudgement;
+
+    public bool IsOver;
     
     // Start is called before the first frame update
     void Start()
     {
+        IsOver = false;
         InvokeRepeating("BehaviourLoop" , 0 , 6);
         InvokeRepeating("Judgement",0,6);
         actorJudgement = GetComponent<ActorJudgement>();
@@ -18,39 +21,43 @@ public class ActorEnemy : MonoBehaviour
 
     public void BehaviourLoop()
     {
-        int BehaviourID = Random.Range(0 , 3);
-
-        switch (BehaviourID)
+        if (IsOver == false)
         {
-            case 0:
-                actorBehaviour = BehaviourEnum.EnemyBehaviour.isAttack;
-                EnemyAnimatorManager.instance.EnemyIsAttack();
-                break;
+            int BehaviourID = Random.Range(0 , 3);
             
-            case 1:
-                actorBehaviour = BehaviourEnum.EnemyBehaviour.isLeftDefend;
-                EnemyAnimatorManager.instance.EnemyIsLDF();
-                break;
+                    switch (BehaviourID)
+                    {
+                        case 0:
+                            actorBehaviour = BehaviourEnum.EnemyBehaviour.isAttack;
+                            EnemyAnimatorManager.instance.EnemyIsAttack();
+                            break;
+                        
+                        case 1:
+                            actorBehaviour = BehaviourEnum.EnemyBehaviour.isLeftDefend;
+                            EnemyAnimatorManager.instance.EnemyIsLDF();
+                            break;
+                        
+                        case 2:
+                            actorBehaviour = BehaviourEnum.EnemyBehaviour.isRightDefend;
+                            EnemyAnimatorManager.instance.EnemyIsRDF();
+                            break;
+                        
+                        default:
+                            //Debug.Log("ERROR ID");
+                            break;
+                    }
             
-            case 2:
-                actorBehaviour = BehaviourEnum.EnemyBehaviour.isRightDefend;
-                EnemyAnimatorManager.instance.EnemyIsRDF();
-                break;
-            
-            default:
-                //Debug.Log("ERROR ID");
-                break;
+                    //Debug.Log(actorBehaviour);
         }
-
-        //Debug.Log(actorBehaviour);
-        
     }
 
     public void ResetBehaviour()
     {
-        CancelInvoke();
-        InvokeRepeating("BehaviourLoop" , 0 , 6);
-        InvokeRepeating("Judgement",0,6);
+        
+            CancelInvoke();
+            InvokeRepeating("BehaviourLoop" , 0 , 6);
+            InvokeRepeating("Judgement",0,6);
+        
     }
     
     

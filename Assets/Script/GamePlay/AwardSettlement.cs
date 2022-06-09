@@ -46,6 +46,6 @@ public class AwardSettlement : MonoBehaviour
         UICtrl.ShowGetMoney(GetMoney);
         UICtrl.ShowAllMoney(PlayerHaveMoney);
 
-        Debug.Log("AAA");
+        //Debug.Log("AAA");
     }
 }

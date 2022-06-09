@@ -32,6 +32,12 @@ public class GameIngManager : MonoBehaviour
         
         EventBus.Subscribe<PlayerWinDetected>(OnPlayerWin); //玩家勝利
         EventBus.Subscribe<PlayerLoseDetected>(OnPlayerLose); //玩家失敗
+        EventBus.Subscribe<CloseADS>(OnCloseADS);
+    }
+
+    private void OnCloseADS(CloseADS obj)
+    {
+        UICtrl.ShowSettementUI();
     }
 
     private void OnEnemyDead(EnemydeadDetected obj)
@@ -40,7 +46,7 @@ public class GameIngManager : MonoBehaviour
         {
             lvManager.PlayerWin();
             GameOverSet.GameOverSettlement();
-            UICtrl.ShowSettementUI();
+            UICtrl.ShowADSUI();
         }
         else
         {
@@ -52,14 +58,14 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerLose(PlayerLoseDetected obj)
     {
         GameOverSet.GameOverSettlement();
-        UICtrl.ShowSettementUI();
-        Debug.Log("BBB");
+        UICtrl.ShowADSUI();
+        //Debug.Log("BBB");
     }
 
     private void OnPlayerWin(PlayerWinDetected obj)
     {
         GameOverSet.GameOverSettlement();
-        UICtrl.ShowSettementUI();
+        UICtrl.ShowADSUI();
         lvManager.PlayerWin();
     }
 
@@ -68,7 +74,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(0.2f);
         hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你防禦住了");
-        Debug.Log("ATKC");
+        //Debug.Log("ATKC");
     }
 
     private void OnPlayerGetHit(PlayerGetAttackDetected obj)
@@ -76,7 +82,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(1f);
         hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你被擊中了");
-        Debug.Log("ATKB");
+        //Debug.Log("ATKB");
     }
 
     private void OnPlayerHitEnemy(PlayerAttackHitDetected obj)
@@ -96,7 +102,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(1.5f);
         hpCorrection.EnemyGetDamage(1f);
         hpCorrection.HPCUpDeta();
-        UICtrl.ShowText("你們互相攻擊");
+        //UICtrl.ShowText("你們互相攻擊");
     }
     
 

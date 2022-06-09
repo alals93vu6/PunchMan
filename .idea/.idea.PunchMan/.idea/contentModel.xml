@@ -16,6 +16,7 @@
           <e p="Events" t="Include">
             <e p="EventBus.cs" t="Include" />
             <e p="GamePlay" t="Include">
+              <e p="CloseADS.cs" t="Include" />
               <e p="EnemydeadDetected.cs" t="Include" />
               <e p="PlayerAndEnemyMutualAttckDetected.cs" t="Include" />
               <e p="PlayerAttackDefendDetected.cs" t="Include" />
@@ -63,6 +64,7 @@
             <e p="Actor.cs" t="Include" />
             <e p="ActorEnemy.cs" t="Include" />
             <e p="ActorJudgement.cs" t="Include" />
+            <e p="ADSButton.cs" t="Include" />
             <e p="AnimatorManager.cs" t="Include" />
             <e p="AwardSettlement.cs" t="Include" />
             <e p="BehaviourEnum.cs" t="Include" />

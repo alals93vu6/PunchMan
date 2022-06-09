@@ -15,18 +15,34 @@ public class UIManager : Instance<UIManager>
     [SerializeField] public GameObject SettlementUI;
     [SerializeField] private Text GetMoney;
     [SerializeField] private Text AllMoney;
+    
+    [Header("ADS")] 
+    [SerializeField] private float ADSTime;
+    [SerializeField] public GameObject ADSUI;
+    [SerializeField] public GameObject ADSButton;
+    [SerializeField] private bool PlayADS;
 
 
     // Start is called before the first frame update
     void Start()
     {
         GameStart();
+        PlayADS = false;
+        ADSButton.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (PlayADS)
+        {
+            ADSTime += Time.deltaTime;
+        }
+
+        if (ADSTime >= 5)
+        {
+            ADSButton.SetActive(true);
+        }
     }
 
     public void ShowGetMoney(int NowGetMoney)
@@ -64,11 +80,24 @@ public class UIManager : Instance<UIManager>
     {
         PlayingUI.SetActive(true);
         SettlementUI.SetActive(false);
+        ADSUI.SetActive(false);
+    }
+
+    public void ShowADSUI()
+    {
+        PlayingUI.SetActive(false);
+        SettlementUI.SetActive(false);
+        ADSUI.SetActive(true);
+        PlayADS = true;
     }
 
     public void ShowSettementUI()
     {
         PlayingUI.SetActive(false);
         SettlementUI.SetActive(true);
+        ADSUI.SetActive(false);
+        ADSButton.SetActive(false);
+        PlayADS = false;
+        ADSTime = 0;
     }
 }
