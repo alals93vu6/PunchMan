@@ -15,7 +15,7 @@ public class SettlementButton : MonoBehaviour
 
     public void BkHomePage()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ADs");
     }
 
     // Update is called once per frame

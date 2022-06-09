@@ -20,6 +20,6 @@ public class ADSButton : MonoBehaviour
 
     public void ClickADS()
     {
-        EventBus.Post(new CloseADS());
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
     }
 }

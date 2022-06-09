@@ -47,7 +47,9 @@ public class GameIngManager : MonoBehaviour
         {
             lvManager.PlayerWin();
             GameOverSet.GameOverSettlement();
-            UICtrl.ShowADSUI();
+            UICtrl.PlayerWin();
+            UICtrl.ShowSettementUI();
+            
         }
         else
         {
@@ -59,14 +61,16 @@ public class GameIngManager : MonoBehaviour
     private void OnPlayerLose(PlayerLoseDetected obj)
     {
         GameOverSet.GameOverSettlement();
-        UICtrl.ShowADSUI();
+        UICtrl.PlayerLose();
+        UICtrl.ShowSettementUI();
         //Debug.Log("BBB");
     }
 
     private void OnPlayerWin(PlayerWinDetected obj)
     {
         GameOverSet.GameOverSettlement();
-        UICtrl.ShowADSUI();
+        UICtrl.PlayerWin();
+        UICtrl.ShowSettementUI();
         lvManager.PlayerWin();
     }
 

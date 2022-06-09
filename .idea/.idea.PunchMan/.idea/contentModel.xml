@@ -6,6 +6,10 @@
     <e p="F:\GitHub\PunchMan" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AD_MP4" t="Include">
+          <e p="ADSButton.cs" t="Include" />
+          <e p="ADsManager.cs" t="Include" />
+        </e>
         <e p="Music" t="Include">
           <e p="BGM.cs" t="Include" />
           <e p="Music.cs" t="Include" />
@@ -64,7 +68,6 @@
             <e p="Actor.cs" t="Include" />
             <e p="ActorEnemy.cs" t="Include" />
             <e p="ActorJudgement.cs" t="Include" />
-            <e p="ADSButton.cs" t="Include" />
             <e p="AnimatorManager.cs" t="Include" />
             <e p="AwardSettlement.cs" t="Include" />
             <e p="BehaviourEnum.cs" t="Include" />
