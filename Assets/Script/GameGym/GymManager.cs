@@ -16,13 +16,13 @@ public class GymManager : MonoBehaviour
         GetGymLV = GetComponent<GymLVManager>();
         GymUICtrl = GetComponent<GymUIManager>();
         
-        EventBus.Subscribe<HitLVUPButtonDetected>(OnLvUP);
-        EventBus.Subscribe<WatchADSDetected>(OnWatchADS);
-        EventBus.Subscribe<PlayerLVUPDetected>(OnPlayerLVUP);
-        EventBus.Subscribe<MoneyIsEnoughDetected>(OnReadyLVUP);
-        EventBus.Subscribe<MoneyIsNotEnoughDetected>(CantLVUP);
-        EventBus.Subscribe<BackHomePageDetected>(OnBackHomePage);
-        EventBus.Subscribe<HitGymButtonDetected>(OnConditionJudgment);
+        EventBus.Subscribe<HitLVUPButtonDetected>(OnLvUP);//點擊升級按鈕
+        EventBus.Subscribe<WatchADSDetected>(OnWatchADS);//看廣告
+        EventBus.Subscribe<PlayerLVUPDetected>(OnPlayerLVUP);//升等
+        EventBus.Subscribe<MoneyIsEnoughDetected>(OnReadyLVUP);//錢足夠
+        EventBus.Subscribe<MoneyIsNotEnoughDetected>(CantLVUP);//錢不夠
+        EventBus.Subscribe<BackHomePageDetected>(OnBackHomePage);//返回主頁
+        EventBus.Subscribe<HitGymButtonDetected>(OnConditionJudgment);//按下按鈕
     }
 
     private void OnConditionJudgment(HitGymButtonDetected obj)
@@ -32,11 +32,12 @@ public class GymManager : MonoBehaviour
 
     private void OnBackHomePage(BackHomePageDetected obj)
     {
-        throw new System.NotImplementedException();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HomePage");
     }
 
     private void OnReadyLVUP(MoneyIsEnoughDetected obj)
     {
+        GetGymLV.UPNeedMoney();
         GymUICtrl.UPing();
         GetGymLV.LVUPing = true;
     }
@@ -54,7 +55,7 @@ public class GymManager : MonoBehaviour
 
     private void OnWatchADS(WatchADSDetected obj)
     {
-        throw new System.NotImplementedException();
+        UnityEngine.SceneManagement.SceneManager.LoadScene("ADsB");
     }
 
     private void OnLvUP(HitLVUPButtonDetected obj)

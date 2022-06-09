@@ -17,6 +17,8 @@ public class GymUIManager : MonoBehaviour
     void Start()
     {
         GymLV = GetComponent<GymLVManager>();
+        
+        ReadyUP();
     }
 
     // Update is called once per frame

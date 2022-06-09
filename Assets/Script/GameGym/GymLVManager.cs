@@ -74,6 +74,12 @@ public class GymLVManager : MonoBehaviour
         }
     }
 
+    public void UPNeedMoney()
+    {
+        PlayerMoney = PlayerMoney - PlayerNeedMoney;
+        PlayerPrefs.SetInt("PlayerMoney",PlayerMoney);
+    }
+
     public void LevelJudgment()
     {
         if (PlayerMoney >= PlayerNeedMoney)
@@ -95,6 +101,7 @@ public class GymLVManager : MonoBehaviour
         PlayerLV++;
         PlayerPrefs.SetInt("NowPlayerLV",PlayerLV);
         NeedTimeSet();
+        NeedMoneySet();
     }
 
     public void NowCondition()

@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="AD_MP4" t="Include">
           <e p="ADSButton.cs" t="Include" />
+          <e p="ADSButtonB.cs" t="Include" />
           <e p="ADsManager.cs" t="Include" />
         </e>
         <e p="Music" t="Include">
@@ -55,6 +56,7 @@
             </e>
           </e>
           <e p="GameGym" t="Include">
+            <e p="GymADS.cs" t="Include" />
             <e p="GymButton.cs" t="Include" />
             <e p="GymLVManager.cs" t="Include" />
             <e p="GymManager.cs" t="Include" />
