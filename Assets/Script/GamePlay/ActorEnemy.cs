@@ -24,17 +24,17 @@ public class ActorEnemy : MonoBehaviour
         {
             case 0:
                 actorBehaviour = BehaviourEnum.EnemyBehaviour.isAttack;
-                UIManager.instacne.isAttck();
+                EnemyAnimatorManager.instance.EnemyIsAttack();
                 break;
             
             case 1:
                 actorBehaviour = BehaviourEnum.EnemyBehaviour.isLeftDefend;
-                UIManager.instacne.isLeftDF();
+                EnemyAnimatorManager.instance.EnemyIsLDF();
                 break;
             
             case 2:
                 actorBehaviour = BehaviourEnum.EnemyBehaviour.isRightDefend;
-                UIManager.instacne.isRightDF();
+                EnemyAnimatorManager.instance.EnemyIsRDF();
                 break;
             
             default:

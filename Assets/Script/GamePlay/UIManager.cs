@@ -16,19 +16,11 @@ public class UIManager : Instance<UIManager>
     [SerializeField] private Text GetMoney;
     [SerializeField] private Text AllMoney;
 
-    [Header("Other")]
-    [SerializeField] public GameObject EnemyAttck;
-    [SerializeField] public GameObject EnemyLeftDF;
-    [SerializeField] public GameObject EnemyRightDF;
-    
-    
+
     // Start is called before the first frame update
     void Start()
     {
         GameStart();
-        EnemyAttck.SetActive(false);
-        EnemyLeftDF.SetActive(false);
-        EnemyRightDF.SetActive(false);
     }
 
     // Update is called once per frame
@@ -60,27 +52,6 @@ public class UIManager : Instance<UIManager>
     public void PlayerHPText(int NowHP)
     {
         PlayerHP.text = "玩家血量：" + NowHP;
-    }
-
-    public void isAttck()
-    {
-        EnemyAttck.SetActive(true);
-        EnemyLeftDF.SetActive(false);
-        EnemyRightDF.SetActive(false);
-    }
-    
-    public void isRightDF()
-    {
-        EnemyAttck.SetActive(false);
-        EnemyLeftDF.SetActive(false);
-        EnemyRightDF.SetActive(true);
-    }
-    
-    public void isLeftDF()
-    {
-        EnemyAttck.SetActive(false);
-        EnemyLeftDF.SetActive(true);
-        EnemyRightDF.SetActive(false);
     }
 
     private void GameStart()
