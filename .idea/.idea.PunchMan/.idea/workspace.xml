@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameGym/GymButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AD_MP4/ADSButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/SettlementButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/EnemyAnimatorManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/AllReset.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,11 +37,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerGetAttackDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackHitDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerAttackDefendDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerWinDetected.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerLoseDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/EnemydeadDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
@@ -87,6 +83,11 @@
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymADS.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/AllReset.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameGym/GymManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopAnimator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Events/Shop/ChangePageDetected.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -156,7 +157,8 @@
       <workItem from="1654609597260" duration="3350000" />
       <workItem from="1654613060064" duration="2841000" />
       <workItem from="1654616044883" duration="3058000" />
-      <workItem from="1654756941457" duration="10434000" />
+      <workItem from="1654756941457" duration="11762000" />
+      <workItem from="1654954303008" duration="2563000" />
     </task>
     <servers />
   </component>
