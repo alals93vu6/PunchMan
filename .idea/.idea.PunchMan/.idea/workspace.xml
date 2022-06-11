@@ -19,6 +19,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/DiamondButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AD_MP4/ADsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -37,7 +38,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/EnemydeadDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageRotaryB.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/PageDetection.cs" />
@@ -88,6 +88,7 @@
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/DiamondButton.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -158,7 +159,7 @@
       <workItem from="1654613060064" duration="2841000" />
       <workItem from="1654616044883" duration="3058000" />
       <workItem from="1654756941457" duration="11762000" />
-      <workItem from="1654954303008" duration="2563000" />
+      <workItem from="1654954303008" duration="3504000" />
     </task>
     <servers />
   </component>

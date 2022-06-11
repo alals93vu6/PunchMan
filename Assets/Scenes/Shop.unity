@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 303615612}
   - component: {fileID: 303615611}
   - component: {fileID: 303615610}
+  - component: {fileID: 303615613}
   m_Layer: 5
   m_Name: 990D
   m_TagString: Untagged
@@ -524,7 +525,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 303615611}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303615613}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &303615611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,6 +574,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303615608}
   m_CullTransparentMesh: 0
+--- !u!114 &303615613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303615608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 1400
+  PlayerHaveDiamond: 0
 --- !u!1 &345512692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1859,7 @@ GameObject:
   - component: {fileID: 856870120}
   - component: {fileID: 856870119}
   - component: {fileID: 856870118}
+  - component: {fileID: 856870121}
   m_Layer: 5
   m_Name: 1690D
   m_TagString: Untagged
@@ -1904,7 +1931,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 856870119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 856870121}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &856870119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1942,6 +1980,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856870116}
   m_CullTransparentMesh: 0
+--- !u!114 &856870121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856870116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 2000
+  PlayerHaveDiamond: 0
 --- !u!1 &864349217
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2314,7 @@ GameObject:
   - component: {fileID: 1015743957}
   - component: {fileID: 1015743956}
   - component: {fileID: 1015743955}
+  - component: {fileID: 1015743958}
   m_Layer: 5
   m_Name: 150D
   m_TagString: Untagged
@@ -2333,7 +2386,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1015743956}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1015743958}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1015743956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2371,6 +2435,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015743953}
   m_CullTransparentMesh: 0
+--- !u!114 &1015743958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015743953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 160
+  PlayerHaveDiamond: 0
 --- !u!1 &1083000302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,6 +3523,7 @@ GameObject:
   - component: {fileID: 1389250001}
   - component: {fileID: 1389250000}
   - component: {fileID: 1389249999}
+  - component: {fileID: 1389250002}
   m_Layer: 5
   m_Name: 300D
   m_TagString: Untagged
@@ -3516,7 +3595,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389250000}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1389250002}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1389250000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3554,6 +3644,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389249997}
   m_CullTransparentMesh: 0
+--- !u!114 &1389250002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389249997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 350
+  PlayerHaveDiamond: 0
 --- !u!1 &1393242480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3763,6 +3867,7 @@ GameObject:
   - component: {fileID: 1527467078}
   - component: {fileID: 1527467077}
   - component: {fileID: 1527467076}
+  - component: {fileID: 1527467079}
   m_Layer: 5
   m_Name: 30D
   m_TagString: Untagged
@@ -3834,7 +3939,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1527467077}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1527467079}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1527467077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3872,6 +3988,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527467074}
   m_CullTransparentMesh: 0
+--- !u!114 &1527467079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527467074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 30
+  PlayerHaveDiamond: 0
 --- !u!1001 &1539971725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4052,6 +4182,7 @@ GameObject:
   - component: {fileID: 1671977296}
   - component: {fileID: 1671977295}
   - component: {fileID: 1671977294}
+  - component: {fileID: 1671977297}
   m_Layer: 5
   m_Name: 500D
   m_TagString: Untagged
@@ -4123,7 +4254,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1671977295}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1671977297}
+        m_MethodName: BuyDiamond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1671977295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4161,6 +4303,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671977292}
   m_CullTransparentMesh: 0
+--- !u!114 &1671977297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671977292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595b1c6eaf5c75347b21a63111df0342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AddNumber: 650
+  PlayerHaveDiamond: 0
 --- !u!1 &1678952682
 GameObject:
   m_ObjectHideFlags: 0

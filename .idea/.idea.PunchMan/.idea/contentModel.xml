@@ -86,6 +86,7 @@
           <e p="GameShop" t="Include">
             <e p="BackHomePageButton.cs" t="Include" />
             <e p="ChangeButton.cs" t="Include" />
+            <e p="DiamondButton.cs" t="Include" />
             <e p="ShopAnimator.cs" t="Include" />
             <e p="ShopManager.cs" t="Include" />
             <e p="ShopUIManager.cs" t="Include" />
