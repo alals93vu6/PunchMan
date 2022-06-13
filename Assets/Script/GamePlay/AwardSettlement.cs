@@ -7,6 +7,8 @@ public class AwardSettlement : MonoBehaviour
     private HPCalculation GetHP;
     private UIManager UICtrl;
 
+    private bool IsDown;
+
     [SerializeField] private float MoneyFlot;
     [SerializeField] private int GetMoney;
     [SerializeField] private int GameNowLV;
@@ -17,6 +19,8 @@ public class AwardSettlement : MonoBehaviour
     {
         GetHP = GetComponent<HPCalculation>();
         UICtrl = GetComponent<UIManager>();
+
+        IsDown = false;
 
         MoneyFlot = 500f;
 
@@ -33,19 +37,23 @@ public class AwardSettlement : MonoBehaviour
 
     public void GameOverSettlement()
     {
-        for (int i = 1; i < GameNowLV; i++)
+        if (IsDown == false)
         {
-            MoneyFlot = MoneyFlot * 1.5f;
+            for (int i = 1; i < GameNowLV; i++)
+            {
+                MoneyFlot = MoneyFlot * 1.5f;
+            }
+                MoneyFlot = MoneyFlot * GetHP.KillNumber;
+                GetMoney = (int) MoneyFlot;
+                PlayerHaveMoney = PlayerHaveMoney + GetMoney;
+                    
+                PlayerPrefs.SetInt("TheSettlement",GetMoney);
+                PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+                UICtrl.ShowGetMoney(GetMoney);
+                UICtrl.ShowAllMoney(PlayerHaveMoney);
+                IsDown = true;
         }
-        MoneyFlot = MoneyFlot * GetHP.KillNumber;
-        GetMoney = (int) MoneyFlot;
-        PlayerHaveMoney = PlayerHaveMoney + GetMoney;
-        
-        PlayerPrefs.SetInt("TheSettlement",GetMoney);
-        PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
-        UICtrl.ShowGetMoney(GetMoney);
-        UICtrl.ShowAllMoney(PlayerHaveMoney);
 
-        //Debug.Log("AAA");
+        
     }
 }

@@ -68,7 +68,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/CloseADS.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ADSButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AnimatorManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
@@ -89,6 +88,7 @@
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GameShop/DiamondButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/HomePage/HomePageUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -160,7 +160,7 @@
       <workItem from="1654616044883" duration="3058000" />
       <workItem from="1654756941457" duration="11762000" />
       <workItem from="1654954303008" duration="3957000" />
-      <workItem from="1655119050652" duration="934000" />
+      <workItem from="1655119050652" duration="2669000" />
     </task>
     <servers />
   </component>
