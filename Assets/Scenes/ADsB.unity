@@ -755,8 +755,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 0.4
-  m_Url: "file://F:/GitHub/PunchMan/Assets/AD_MP4/\u9053\u5730\u6975\u54C1 \u6E05\u3002\u9EA5\u8336
-    15\u79D2\u5EE3\u544A.mp4"
+  m_Url: file://F:/GitHub/PunchMan/Assets/AD_MP4/ADB.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
