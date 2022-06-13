@@ -11,14 +11,19 @@ public class HomePageUIManager : MonoBehaviour
 
     public Text MoneyText;
 
+    public Text DiamondText;
+
     private int nowLV;
 
     private int nowMoney;
+
+    private int nowDiamond;
     // Start is called before the first frame update
     void Start()
     {
         ShowNowLV();
         ShowMoney();
+        ShowDiamond();
     }
 
     // Update is called once per frame
@@ -42,6 +47,13 @@ public class HomePageUIManager : MonoBehaviour
     {
         nowMoney = PlayerPrefs.GetInt("PlayerMoney");
         MoneyText.text = "：" + nowMoney;
+    }
+
+    private void ShowDiamond()
+    {
+        nowDiamond = PlayerPrefs.GetInt("PlayerDiamond");
+        DiamondText.text = "：" + nowDiamond;
+
     }
 
     public void PlayerInReady()
