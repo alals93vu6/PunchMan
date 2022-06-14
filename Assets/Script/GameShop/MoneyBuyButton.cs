@@ -25,14 +25,17 @@ public class MoneyBuyButton : MonoBehaviour
 
     public void BuyMoney()
     {
-        PlayerHaveDiamond = PlayerPrefs.GetInt("PlayerDiamond");
-        PlayerHaveMoney = PlayerPrefs.GetInt("PlayerMoney");
+        if (PlayerHaveDiamond >= NeedNumber)
+        {
+            PlayerHaveDiamond = PlayerPrefs.GetInt("PlayerDiamond");
+            PlayerHaveMoney = PlayerPrefs.GetInt("PlayerMoney");
+                    
+            PlayerHaveDiamond = PlayerHaveDiamond - NeedNumber;
+            PlayerHaveMoney = PlayerHaveMoney + AddNumber;
+                    
+            PlayerPrefs.SetInt("PlayerDiamond",PlayerHaveDiamond);
+            PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+        }
         
-        PlayerHaveDiamond = PlayerHaveDiamond - NeedNumber;
-        PlayerHaveMoney = PlayerHaveMoney + AddNumber;
-        
-        PlayerPrefs.SetInt("PlayerDiamond",PlayerHaveDiamond);
-        PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
-
     }
 }

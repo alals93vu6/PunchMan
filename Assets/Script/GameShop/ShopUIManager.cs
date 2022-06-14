@@ -40,7 +40,7 @@ public class ShopUIManager : MonoBehaviour
         {
             GloveUI.SetActive(false);
             DiamondUI.SetActive(false);
-            MoneyUI.SetActive(transform);
+            MoneyUI.SetActive(true);
             ChangeButtonText.text = "購買拳套";
         }
     }
@@ -51,14 +51,13 @@ public class ShopUIManager : MonoBehaviour
         {
             IsGlovePage = 2;
         }
-        if (IsGlovePage == 2)
+        else if (IsGlovePage == 2)
         {
             IsGlovePage = 3;
         }
-        if (IsGlovePage == 3)
+        else
         {
             IsGlovePage = 1;
         }
-        
     }
 }

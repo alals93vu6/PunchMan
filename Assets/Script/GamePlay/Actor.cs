@@ -15,7 +15,7 @@ public class Actor : MonoBehaviour
 
     [Header("數值")]
     [SerializeField] private float ButtonTime , ButtonTimeMax;
-    [SerializeField] private float DfTime;
+    //[SerializeField] private float DfTime;
 
     [Header("其他")] 
     [SerializeField] private UIManager UICtrl;
@@ -24,7 +24,7 @@ public class Actor : MonoBehaviour
         // Start is called before the first frame update
     void Start()
     {
-        DfTime = 5;
+        //DfTime = 5;
         UICtrl = GetComponent<UIManager>();
     }
 

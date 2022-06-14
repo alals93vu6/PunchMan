@@ -20,6 +20,7 @@ public class ShopManager : MonoBehaviour
     private void OnChangePage(ChangePageDetected obj)
     {
         ShopUICtrl.ChangePageButton();
+        
     }
 
     private void OnBackHomePage(BackHomePageDetected obj)

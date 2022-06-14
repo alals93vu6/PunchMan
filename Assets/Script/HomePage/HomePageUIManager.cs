@@ -46,13 +46,13 @@ public class HomePageUIManager : MonoBehaviour
     private void ShowMoney()
     {
         nowMoney = PlayerPrefs.GetInt("PlayerMoney");
-        MoneyText.text = "：" + nowMoney;
+        MoneyText.text = "" + nowMoney;
     }
 
     private void ShowDiamond()
     {
         nowDiamond = PlayerPrefs.GetInt("PlayerDiamond");
-        DiamondText.text = "：" + nowDiamond;
+        DiamondText.text = "" + nowDiamond;
 
     }
 
