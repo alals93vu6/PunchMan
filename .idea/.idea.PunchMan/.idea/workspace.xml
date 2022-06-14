@@ -89,8 +89,8 @@
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
