@@ -8,8 +8,9 @@ public class UIManager : Instance<UIManager>
     [Header("遊戲中")] 
     [SerializeField] public GameObject PlayingUI;
     [SerializeField] private Text UItext;
-    [SerializeField] private Text EnemyHP;
-    [SerializeField] private Text PlayerHP;
+    [SerializeField] public Slider PlayerHPSlider;
+    [SerializeField] public float MaxHP;
+    [SerializeField] public float NowHP;
 
     [Header("結算")] 
     [SerializeField] public GameObject SettlementUI;
@@ -25,8 +26,8 @@ public class UIManager : Instance<UIManager>
     void Start()
     {
         GameStart();
-
         ShowGamePlayingUI();
+
     }
 
     // Update is called once per frame
@@ -49,21 +50,10 @@ public class UIManager : Instance<UIManager>
     {
         UItext.text = textA;
     }
-
-    public void EnemyHPText(int NowHP)
-    {
-        EnemyHP.text = "敵人血量：" + NowHP;
-    }
     
-    public void PlayerHPText(int NowHP)
-    {
-        PlayerHP.text = "玩家血量：" + NowHP;
-    }
-
     private void GameStart()
     {
         ShowText("無動作");
-        EnemyHPText(999);
     }
 
     public void ShowGamePlayingUI()

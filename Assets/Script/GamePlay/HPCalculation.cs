@@ -36,15 +36,12 @@ public class HPCalculation : MonoBehaviour
         
         GameStartNumber();
         HPCUpDeta();
-        
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        UICtrl.PlayerHPText(PlayerHP);
-        UICtrl.EnemyHPText(EnemyHP);
+        
     }
 
     public void PlayerGetDamage(float damage)
@@ -55,6 +52,7 @@ public class HPCalculation : MonoBehaviour
             DamageFloat = EnemyPowerCalculation * damage;
                                 
             PlayerHP -= (int) DamageFloat;
+            UICtrl.PlayerHPSlider.value = PlayerHP;
         }
     }
     
@@ -98,6 +96,8 @@ public class HPCalculation : MonoBehaviour
         PlayerPower = GetLV.GetPlayerPower;
         EnemyHP = GetLV.GetEnemyHP;
         EnemyPower = GetLV.GetEnemyPower;
+
+        UICtrl.PlayerHPSlider.value = UICtrl.PlayerHPSlider.maxValue = PlayerHP;
     }
 
     public void PlayerRebornSet()
@@ -106,4 +106,5 @@ public class HPCalculation : MonoBehaviour
         EnemyCtrl.IsOver = false;
         IsPlaying = true;
     }
+
 }

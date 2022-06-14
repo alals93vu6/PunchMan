@@ -21,8 +21,6 @@ public class ActorJudgement : MonoBehaviour
     {
         UICtrl = GetComponent<UIManager>();
         HPFlot = GetComponent<HPCalculation>();
-        UICtrl.PlayerHPText(HPFlot.PlayerHP);
-        UICtrl.EnemyHPText(HPFlot.EnemyHP);
     }
 
     void Update()
@@ -105,8 +103,6 @@ public class ActorJudgement : MonoBehaviour
                 break;
         }
         
-        UICtrl.PlayerHPText(HPFlot.PlayerHP);
-        UICtrl.EnemyHPText(HPFlot.EnemyHP);
         actorEnemy.ResetBehaviour();
     }
 
@@ -154,8 +150,6 @@ public class ActorJudgement : MonoBehaviour
         
         actor.DefendOFF();
         CancelInvoke("EnemyAttck");
-        UICtrl.PlayerHPText(HPFlot.PlayerHP);
-        UICtrl.EnemyHPText(HPFlot.EnemyHP);
     }
 
     
