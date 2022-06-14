@@ -2978,6 +2978,7 @@ GameObject:
   - component: {fileID: 1219338754}
   - component: {fileID: 1219338753}
   - component: {fileID: 1219338752}
+  - component: {fileID: 1219338755}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3050,6 +3051,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2.7500002, y: -88.712006, z: 0.062000003}
+--- !u!114 &1219338755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219338751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 727d93e99e97e264eb93b4ad25adc184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  start: 0
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.192858
+      value: 0.04732591
+      inSlope: 0.065678366
+      outSlope: 0.065678366
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.63018817
+      value: 0.04594864
+      inSlope: 0.6093071
+      outSlope: 0.6093071
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.79981524
+      value: 0.034460694
+      inSlope: -0.23400024
+      outSlope: -0.23400024
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.93047667
+      value: 0.046866916
+      inSlope: -0.74220407
+      outSlope: -0.74220407
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9916687
+      value: 0.01796341
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 1
 --- !u!1 &1268489369
 GameObject:
   m_ObjectHideFlags: 0
