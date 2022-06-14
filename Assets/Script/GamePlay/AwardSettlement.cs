@@ -7,12 +7,13 @@ public class AwardSettlement : MonoBehaviour
     private HPCalculation GetHP;
     private UIManager UICtrl;
 
-    private bool IsDown;
+    public bool IsDown;
 
     [SerializeField] private float MoneyFlot;
     [SerializeField] private int GetMoney;
     [SerializeField] private int GameNowLV;
     [SerializeField] private int PlayerHaveMoney;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -55,5 +56,12 @@ public class AwardSettlement : MonoBehaviour
         }
 
         
+    }
+
+    public void PlayerIsReborn()
+    {
+        PlayerHaveMoney = PlayerHaveMoney - GetMoney;
+        PlayerPrefs.SetInt("PlayerMoney",PlayerHaveMoney);
+        IsDown = true;
     }
 }

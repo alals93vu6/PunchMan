@@ -29,6 +29,7 @@
               <e p="PlayerDefendAttackDetected.cs" t="Include" />
               <e p="PlayerGetAttackDetected.cs" t="Include" />
               <e p="PlayerLoseDetected.cs" t="Include" />
+              <e p="PlayerRebirthDetected.cs" t="Include" />
               <e p="PlayerWinDetected.cs" t="Include" />
             </e>
             <e p="Gym" t="Include">
@@ -84,6 +85,7 @@
             <e p="HPCalculation.cs" t="Include" />
             <e p="Instance.cs" t="Include" />
             <e p="LVManager.cs" t="Include" />
+            <e p="ReBornButton.cs" t="Include" />
             <e p="SettlementButton.cs" t="Include" />
             <e p="Test.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />

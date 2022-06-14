@@ -13,9 +13,12 @@ public class UIManager : Instance<UIManager>
 
     [Header("結算")] 
     [SerializeField] public GameObject SettlementUI;
+    [SerializeField] public GameObject WinSettlementButton;
+    [SerializeField] public GameObject LoseSettlemenButton;
     [SerializeField] private Text GetMoney;
     [SerializeField] private Text AllMoney;
-    [SerializeField] private Text WinOrLose;
+    [SerializeField] private Text WinorLoseText;
+
 
 
     // Start is called before the first frame update
@@ -67,6 +70,8 @@ public class UIManager : Instance<UIManager>
     {
         PlayingUI.SetActive(true);
         SettlementUI.SetActive(false);
+        WinSettlementButton.SetActive(false);
+        LoseSettlemenButton.SetActive(false);
         Debug.Log("VAR");
     }
 
@@ -74,15 +79,25 @@ public class UIManager : Instance<UIManager>
     {
         PlayingUI.SetActive(false);
         SettlementUI.SetActive(true);
+        WinSettlementButton.SetActive(true);
+        LoseSettlemenButton.SetActive(false);
+    }
+    
+    public void ShowLoseSettementUI()
+    {
+        PlayingUI.SetActive(false);
+        SettlementUI.SetActive(true);
+        WinSettlementButton.SetActive(false);
+        LoseSettlemenButton.SetActive(true);
     }
 
     public void PlayerLose()
     {
-        WinOrLose.text = "你失敗了!";
+        WinorLoseText.text = "你失敗了!";
     }
     
     public void PlayerWin()
     {
-        WinOrLose.text = "你贏了!";
+        WinorLoseText.text = "你贏了!";
     }
 }

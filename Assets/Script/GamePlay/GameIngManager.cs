@@ -32,7 +32,15 @@ public class GameIngManager : MonoBehaviour
         
         EventBus.Subscribe<PlayerWinDetected>(OnPlayerWin); //玩家勝利
         EventBus.Subscribe<PlayerLoseDetected>(OnPlayerLose); //玩家失敗
-        EventBus.Subscribe<CloseADS>(OnCloseADS);
+        EventBus.Subscribe<CloseADS>(OnCloseADS);//關閉廣告
+        EventBus.Subscribe<PlayerRebirthDetected>(OnPlayerRebirth);
+    }
+
+    private void OnPlayerRebirth(PlayerRebirthDetected obj)
+    {
+        hpCorrection.PlayerRebornSet();
+        GameOverSet.PlayerIsReborn();
+        UICtrl.ShowGamePlayingUI();
     }
 
     private void OnCloseADS(CloseADS obj)
@@ -62,7 +70,7 @@ public class GameIngManager : MonoBehaviour
     {
         GameOverSet.GameOverSettlement();
         UICtrl.PlayerLose();
-        UICtrl.ShowSettementUI();
+        UICtrl.ShowLoseSettementUI();
         //Debug.Log("BBB");
     }
 

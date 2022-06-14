@@ -99,4 +99,11 @@ public class HPCalculation : MonoBehaviour
         EnemyHP = GetLV.GetEnemyHP;
         EnemyPower = GetLV.GetEnemyPower;
     }
+
+    public void PlayerRebornSet()
+    {
+        PlayerHP = GetLV.GetPlayerHP;
+        EnemyCtrl.IsOver = false;
+        IsPlaying = true;
+    }
 }
