@@ -92,7 +92,10 @@
           </e>
           <e p="GameShop" t="Include">
             <e p="BackHomePageButton.cs" t="Include" />
+            <e p="BuyButton.cs" t="Include" />
             <e p="ChangeButton.cs" t="Include" />
+            <e p="ChangeButton1.cs" t="Include" />
+            <e p="ChengeButtonStart.cs" t="Include" />
             <e p="DiamondButton.cs" t="Include" />
             <e p="MoneyBuyButton.cs" t="Include" />
             <e p="ShopAnimator.cs" t="Include" />

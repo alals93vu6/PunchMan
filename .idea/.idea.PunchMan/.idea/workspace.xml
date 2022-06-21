@@ -13,11 +13,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AD_MP4/ADSButtonB.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../電腦/Unitybitch/GoodShit/EventBus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/DiamondButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/LVManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/FirstPlay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ChengeButtonStart.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameGym/GymButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ShopGetLVManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -30,6 +32,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/HomePage/PageRotary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AD_MP4/ADsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameGym/GymLVManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/BuyButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AD_MP4/ADSButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GamePlay/SettlementButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,10 +43,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/TestOWO.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/YouQi/Now_Scenes.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/PlayerBackHomePage.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/HitLvUPButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/WatchADS.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/EnoughMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Events/Gym/LackOfMoney.cs" />
@@ -87,10 +86,14 @@
       <option value="$PROJECT_DIR$/Assets/Script/Events/GamePlay/PlayerRebirthDetected.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ReBornButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/AwardSettlement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/ActorJudgement.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/HPCalculation.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/GamePlay/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/BuyButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/YouQi/Shake.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GamePlay/GameIngManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ChangeButton1.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/GameShop/ChengeButtonStart.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28OOKn4A2a2Wr4mbs5XTkZ1J977" />
@@ -163,6 +166,7 @@
       <workItem from="1654756941457" duration="11762000" />
       <workItem from="1654954303008" duration="3957000" />
       <workItem from="1655119050652" duration="2669000" />
+      <workItem from="1655812024609" duration="1544000" />
     </task>
     <servers />
   </component>

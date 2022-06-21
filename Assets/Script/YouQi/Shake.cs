@@ -5,6 +5,14 @@ using UnityEngine;
 public class Shake : MonoBehaviour
 {
 
+    #region Instance
+    static public Shake instance;
+    private void Awake()
+    {
+        instance = this;
+    }
+    #endregion
+    
     public bool start = false;
     public AnimationCurve curve;
     public float duration = 1f;

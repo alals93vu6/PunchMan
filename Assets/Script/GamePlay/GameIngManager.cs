@@ -87,6 +87,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(0.2f);
         hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你防禦住了");
+        Shake.instance.start = true;
         //Debug.Log("ATKC");
     }
 
@@ -95,6 +96,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(1f);
         hpCorrection.HPCUpDeta();
         UICtrl.ShowText("你被擊中了");
+        Shake.instance.start = true;
         //Debug.Log("ATKB");
     }
 
@@ -102,12 +104,15 @@ public class GameIngManager : MonoBehaviour
     {
         hpCorrection.EnemyGetDamage(1f);
         hpCorrection.HPCUpDeta();
+        Shake.instance.start = true;
+        Shake.instance.start = true;
     }
 
     private void OnPlayerNotHitEnemy(PlayerAttackDefendDetected obj)
     {
         hpCorrection.EnemyGetDamage(0.4f);
         hpCorrection.HPCUpDeta();
+        Shake.instance.start = true;
     }
 
     private void OnPlayerMutualAttack(PlayerAndEnemyMutualAttckDetected obj)
@@ -115,6 +120,7 @@ public class GameIngManager : MonoBehaviour
         hpCorrection.PlayerGetDamage(1.5f);
         hpCorrection.EnemyGetDamage(1f);
         hpCorrection.HPCUpDeta();
+        Shake.instance.start = true;
         //UICtrl.ShowText("你們互相攻擊");
     }
     
